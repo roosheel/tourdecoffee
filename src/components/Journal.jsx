@@ -217,20 +217,24 @@ export default function Journal() {
         }}>
           <div style={{ fontSize: 11, color: "#bbb", marginBottom: 4 }}>destination</div>
           <div style={{ fontSize: 22, fontWeight: 700, marginBottom: 4, ...cursive }}>{run.name}</div>
-          <div style={{ fontSize: 13, color: "#999", marginBottom: 12 }}>{run.hood}</div>
-          <div style={{ display: "flex", gap: 2, marginBottom: 12 }}>
-            {Array.from({ length: 5 }, (_, j) => (
-              <Star
-                key={j}
-                size={14}
-                fill={j < run.stars ? "#E8913A" : "transparent"}
-                color={j < run.stars ? "#E8913A" : "#e0dcd7"}
-              />
-            ))}
-          </div>
-          <p style={{ color: "#999", fontSize: 14, lineHeight: 1.7, margin: 0, ...handwritten }}>
-            &ldquo;{run.note}&rdquo;
-          </p>
+          {run.hood && <div style={{ fontSize: 13, color: "#999", marginBottom: 12 }}>{run.hood}</div>}
+          {run.stars > 0 && (
+            <div style={{ display: "flex", gap: 2, marginBottom: 12 }}>
+              {Array.from({ length: 5 }, (_, j) => (
+                <Star
+                  key={j}
+                  size={14}
+                  fill={j < run.stars ? "#E8913A" : "transparent"}
+                  color={j < run.stars ? "#E8913A" : "#e0dcd7"}
+                />
+              ))}
+            </div>
+          )}
+          {run.note && (
+            <p style={{ color: "#999", fontSize: 14, lineHeight: 1.7, margin: 0, ...handwritten }}>
+              &ldquo;{run.note}&rdquo;
+            </p>
+          )}
         </div>
 
         {/* Photo count / stats card */}
