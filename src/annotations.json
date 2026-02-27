@@ -1,0 +1,10 @@
+{
+  "_README": "Map Strava activity IDs to coffee shop metadata. Run `npm run sync` after editing.",
+  "_example_12345678": {
+    "name": "Coffee Shop Name",
+    "hood": "Neighborhood",
+    "stars": 4,
+    "note": "Your review of the shop.",
+    "photos": 3
+  }
+}

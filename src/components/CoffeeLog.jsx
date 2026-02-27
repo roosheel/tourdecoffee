@@ -48,7 +48,7 @@ export default function CoffeeLog() {
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
                 <span style={{ fontSize: 16, fontWeight: 700, color: "#1a1a1a" }}>{shop.n}</span>
-                <span style={{
+                {shop.h && <span style={{
                   fontSize: 11,
                   color: "#bbb",
                   background: "#f3f1ed",
@@ -56,7 +56,7 @@ export default function CoffeeLog() {
                   borderRadius: 4,
                 }}>
                   {shop.h}
-                </span>
+                </span>}
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
                 <span style={{ color: "#E8913A", fontSize: 13, fontWeight: 700 }}>{shop.d} mi</span>
@@ -73,7 +73,7 @@ export default function CoffeeLog() {
                 <span style={{ color: "#ddd", fontSize: 11, minWidth: 45, textAlign: "right" }}>{shop.dt}</span>
               </div>
             </div>
-            {expanded === i && (
+            {expanded === i && shop.t && (
               <p style={{ color: "#999", fontSize: 14, margin: "10px 0 2px 0", ...handwritten }}>
                 &ldquo;{shop.t}&rdquo;
               </p>
