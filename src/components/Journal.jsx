@@ -1,24 +1,21 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Route, Calendar, MapPin } from 'lucide-react';
-import { MapContainer, TileLayer, Polyline, Circle, Marker } from 'react-leaflet';
+import { ChevronLeft, ChevronRight, Star, Route, Calendar, MapPin, Eye, EyeOff, Layers } from 'lucide-react';
+import { MapContainer, TileLayer, Polyline, Circle, Marker, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import { runs, START_COORDS } from '../data';
 
 function createShopIcon(isActive) {
+  const size = isActive ? 24 : 16;
+  const fill = isActive ? '#E8913A' : '#7BBAD4';
   return L.divIcon({
     className: '',
-    html: `<div style="
-      width:${isActive ? 16 : 10}px;
-      height:${isActive ? 16 : 10}px;
-      background:${isActive ? '#E8913A' : '#7BBAD4'};
-      border:2px solid #fff;
-      border-radius:50%;
-      box-shadow:0 2px 6px rgba(0,0,0,${isActive ? '0.3' : '0.15'});
-      transition: all 0.2s ease;
-    "></div>`,
-    iconSize: [isActive ? 16 : 10, isActive ? 16 : 10],
-    iconAnchor: [isActive ? 8 : 5, isActive ? 8 : 5],
+    html: `<svg viewBox="0 0 24 24" width="${size}" height="${size}" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,${isActive ? '0.3' : '0.15'})); transition: all 0.2s ease;">
+      <ellipse cx="12" cy="12" rx="8" ry="10" fill="${fill}" stroke="#fff" stroke-width="2"/>
+      <path d="M12 4 C10 8, 10 16, 12 20" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
+    </svg>`,
+    iconSize: [size, size],
+    iconAnchor: [size / 2, size / 2],
   });
 }
 
@@ -35,14 +32,45 @@ const startIcon = L.divIcon({
   iconAnchor: [9, 9],
 });
 
+function groupRunsByShop(allRuns) {
+  const groups = [];
+  for (const run of allRuns) {
+    const existing = groups.find(g =>
+      Math.abs(g.coords[0] - run.shopCoords[0]) < 0.001 &&
+      Math.abs(g.coords[1] - run.shopCoords[1]) < 0.001
+    );
+    if (existing) {
+      existing.runs.push(run);
+    } else {
+      groups.push({ coords: run.shopCoords, runs: [run] });
+    }
+  }
+  return groups;
+}
+
+const shopGroups = groupRunsByShop(runs);
+
+const ROUTE_MODES = [
+  { key: "heatmap", label: "All Routes", icon: Layers },
+  { key: "active", label: "Active", icon: Eye },
+  { key: "hidden", label: "Hidden", icon: EyeOff },
+];
+
 export default function Journal() {
   const [current, setCurrent] = useState(0);
+  const [routeMode, setRouteMode] = useState("heatmap");
   const run = runs[current];
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   const prev = () => setCurrent(Math.max(0, current - 1));
   const next = () => setCurrent(Math.min(runs.length - 1, current + 1));
+
+  const currentGroup = useMemo(() =>
+    shopGroups.find(g => g.runs.some(r => r === run)),
+    [run]
+  );
+  const alsoVisited = currentGroup ? currentGroup.runs.filter(r => r !== run) : [];
 
   return (
     <section id="journal" className="journal-section" ref={ref}>
@@ -161,6 +189,37 @@ export default function Journal() {
               <div style={{ fontSize: 13, color: "#999", marginTop: 3 }}>
                 {run.distance} mi · {run.name}
               </div>
+              <div style={{
+                display: "flex",
+                gap: 4,
+                marginTop: 8,
+                borderTop: "1px solid #e8e4df",
+                paddingTop: 8,
+              }}>
+                {ROUTE_MODES.map(({ key, label, icon: Icon }) => (
+                  <button
+                    key={key}
+                    onClick={() => setRouteMode(key)}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 4,
+                      padding: "3px 8px",
+                      fontSize: 11,
+                      fontWeight: routeMode === key ? 700 : 400,
+                      color: routeMode === key ? "#fff" : "#999",
+                      background: routeMode === key ? "#E8913A" : "#f3f1ed",
+                      border: "none",
+                      borderRadius: 6,
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                    }}
+                  >
+                    <Icon size={11} />
+                    {label}
+                  </button>
+                ))}
+              </div>
             </div>
             <MapContainer
               center={START_COORDS}
@@ -185,25 +244,54 @@ export default function Journal() {
                   dashArray: "6 4",
                 }}
               />
-              <Polyline
-                positions={run.route}
-                pathOptions={{
-                  color: "#E8913A",
-                  weight: 4,
-                  opacity: 0.85,
-                  dashArray: "8 6",
-                  lineCap: "round",
-                  lineJoin: "round",
-                }}
-              />
-              {runs.map((r, i) => (
-                <Marker
-                  key={r.id}
-                  position={r.shopCoords}
-                  icon={createShopIcon(i === current)}
-                  eventHandlers={{ click: () => setCurrent(i) }}
-                />
+              {/* Heatmap: show all routes faintly */}
+              {routeMode === "heatmap" && runs.map((r, i) => (
+                i !== current && (
+                  <Polyline
+                    key={`bg-${r.id}`}
+                    positions={r.route}
+                    pathOptions={{
+                      color: "#E8913A",
+                      weight: 2,
+                      opacity: 0.12,
+                      lineCap: "round",
+                      lineJoin: "round",
+                    }}
+                  />
+                )
               ))}
+              {/* Active route */}
+              {routeMode !== "hidden" && (
+                <Polyline
+                  positions={run.route}
+                  pathOptions={{
+                    color: "#E8913A",
+                    weight: 4,
+                    opacity: 0.85,
+                    dashArray: "8 6",
+                    lineCap: "round",
+                    lineJoin: "round",
+                  }}
+                />
+              )}
+              {/* Shop markers grouped */}
+              {shopGroups.map((group, gi) => {
+                const isActive = group.runs.some(r => runs.indexOf(r) === current);
+                return (
+                  <Marker
+                    key={gi}
+                    position={group.coords}
+                    icon={createShopIcon(isActive)}
+                    eventHandlers={{ click: () => setCurrent(runs.indexOf(group.runs[0])) }}
+                  >
+                    <Tooltip direction="top" offset={[0, -12]} opacity={0.95}>
+                      <span style={{ fontWeight: 700, fontSize: 12 }}>
+                        {group.runs.map(r => `#${r.id}`).join(', ')}
+                      </span>
+                    </Tooltip>
+                  </Marker>
+                );
+              })}
               <Marker position={START_COORDS} icon={startIcon} />
             </MapContainer>
           </div>
@@ -261,6 +349,40 @@ export default function Journal() {
               }}>
                 &ldquo;{run.note}&rdquo;
               </p>
+            )}
+            {alsoVisited.length > 0 && (
+              <div style={{ marginTop: 16, paddingTop: 14, borderTop: "1px solid #e8e4df" }}>
+                <div style={{
+                  fontSize: 11,
+                  color: "#bbb",
+                  marginBottom: 6,
+                  textTransform: "uppercase",
+                  letterSpacing: 1,
+                }}>
+                  also visited
+                </div>
+                <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  {alsoVisited.map(r => (
+                    <button
+                      key={r.id}
+                      onClick={() => setCurrent(runs.indexOf(r))}
+                      style={{
+                        background: "#fef8f0",
+                        color: "#E8913A",
+                        border: "1px solid #f0d9b5",
+                        borderRadius: 14,
+                        padding: "4px 12px",
+                        fontSize: 12,
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      Run #{r.id} · {r.date}
+                    </button>
+                  ))}
+                </div>
+              </div>
             )}
           </div>
 
@@ -327,7 +449,7 @@ export default function Journal() {
               fontSize: 11,
               lineHeight: 1.6,
             }}>
-              click a run number to explore · click a pin on the map to jump
+              click a run number to explore · hover a pin to see visits
             </div>
           </div>
         </div>
