@@ -38,14 +38,15 @@ function createShopIcon(isActive, groupIndex) {
 const startIcon = L.divIcon({
   className: '',
   html: `<div style="
-    width:18px;height:18px;
+    width:32px;height:32px;
     background:#E8913A;
     border:3px solid #fff;
     border-radius:50%;
     box-shadow:0 0 0 2px #E8913A, 0 2px 8px rgba(0,0,0,0.25);
-  "></div>`,
-  iconSize: [18, 18],
-  iconAnchor: [9, 9],
+    display:flex;align-items:center;justify-content:center;
+  "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>`,
+  iconSize: [32, 32],
+  iconAnchor: [16, 16],
 });
 
 function groupRunsByShop(allRuns) {
