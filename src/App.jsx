@@ -30,7 +30,7 @@ export default function App() {
       <Hero onNav={navigateTo} />
       <About />
       <Schedule />
-      <CoffeeLog />
+      <Journal />
 
       <div className="marquee-wrap blue">
         <Marquee speed={28} direction="right">
@@ -38,7 +38,7 @@ export default function App() {
         </Marquee>
       </div>
 
-      <Journal />
+      <CoffeeLog />
       <Instagram />
       <Merch />
       <Footer />

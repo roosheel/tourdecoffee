@@ -1,12 +1,16 @@
 import { useState, useMemo, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { Star, Search, Coffee } from 'lucide-react';
+import { Star, Search, Coffee, ChevronLeft, ChevronRight } from 'lucide-react';
 import { coffeeLog } from '../data';
 import tdcDecoration from '../assets/tdc-decoration.png';
+
+const PAGE_SIZE_OPTIONS = [10, 20, 30];
 
 export default function CoffeeLog() {
   const [expanded, setExpanded] = useState(null);
   const [search, setSearch] = useState('');
+  const [pageSize, setPageSize] = useState(10);
+  const [page, setPage] = useState(0);
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
@@ -18,6 +22,21 @@ export default function CoffeeLog() {
       (s.h && s.h.toLowerCase().includes(q))
     );
   }, [search]);
+
+  const totalPages = Math.ceil(filtered.length / pageSize);
+  const paginated = filtered.slice(page * pageSize, (page + 1) * pageSize);
+
+  const handlePageSizeChange = (size) => {
+    setPageSize(size);
+    setPage(0);
+    setExpanded(null);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+    setPage(0);
+    setExpanded(null);
+  };
 
   return (
     <section id="log" className="coffee-log" ref={ref}>
@@ -67,8 +86,48 @@ export default function CoffeeLog() {
             className="log-search"
             placeholder="Search shops by name or neighborhood..."
             value={search}
-            onChange={e => setSearch(e.target.value)}
+            onChange={handleSearchChange}
           />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ delay: 0.2 }}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginBottom: 16,
+            flexWrap: "wrap",
+            gap: 8,
+          }}
+        >
+          <span style={{ color: "#999", fontSize: 12 }}>
+            Showing {Math.min(page * pageSize + 1, filtered.length)}–{Math.min((page + 1) * pageSize, filtered.length)} of {filtered.length}
+          </span>
+          <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+            <span style={{ color: "#999", fontSize: 12, marginRight: 4 }}>Per page:</span>
+            {PAGE_SIZE_OPTIONS.map(size => (
+              <button
+                key={size}
+                onClick={() => handlePageSizeChange(size)}
+                style={{
+                  padding: "4px 10px",
+                  fontSize: 12,
+                  fontWeight: pageSize === size ? 700 : 400,
+                  color: pageSize === size ? "#fff" : "#999",
+                  background: pageSize === size ? "#E8913A" : "#f3f1ed",
+                  border: "none",
+                  borderRadius: 6,
+                  cursor: "pointer",
+                  transition: "all 0.15s",
+                }}
+              >
+                {size}
+              </button>
+            ))}
+          </div>
         </motion.div>
 
         <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
@@ -85,7 +144,7 @@ export default function CoffeeLog() {
             </div>
           )}
           <AnimatePresence mode="popLayout">
-            {filtered.map((shop, i) => (
+            {paginated.map((shop, i) => (
               <motion.div
                 key={shop.n + shop.dt}
                 className={`log-entry ${expanded === i ? 'expanded' : ''}`}
@@ -182,6 +241,77 @@ export default function CoffeeLog() {
             ))}
           </AnimatePresence>
         </div>
+
+        {totalPages > 1 && (
+          <div style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 8,
+            marginTop: 20,
+          }}>
+            <button
+              onClick={() => { setPage(p => p - 1); setExpanded(null); }}
+              disabled={page === 0}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 2,
+                padding: "6px 12px",
+                fontSize: 13,
+                color: page === 0 ? "#ccc" : "#E8913A",
+                background: page === 0 ? "#f3f1ed" : "#fef8f0",
+                border: "none",
+                borderRadius: 8,
+                cursor: page === 0 ? "default" : "pointer",
+                transition: "all 0.15s",
+              }}
+            >
+              <ChevronLeft size={14} /> Prev
+            </button>
+            <div style={{ display: "flex", gap: 4 }}>
+              {Array.from({ length: totalPages }, (_, i) => (
+                <button
+                  key={i}
+                  onClick={() => { setPage(i); setExpanded(null); }}
+                  style={{
+                    width: 30,
+                    height: 30,
+                    fontSize: 12,
+                    fontWeight: page === i ? 700 : 400,
+                    color: page === i ? "#fff" : "#999",
+                    background: page === i ? "#E8913A" : "#f3f1ed",
+                    border: "none",
+                    borderRadius: 6,
+                    cursor: "pointer",
+                    transition: "all 0.15s",
+                  }}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={() => { setPage(p => p + 1); setExpanded(null); }}
+              disabled={page >= totalPages - 1}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 2,
+                padding: "6px 12px",
+                fontSize: 13,
+                color: page >= totalPages - 1 ? "#ccc" : "#E8913A",
+                background: page >= totalPages - 1 ? "#f3f1ed" : "#fef8f0",
+                border: "none",
+                borderRadius: 8,
+                cursor: page >= totalPages - 1 ? "default" : "pointer",
+                transition: "all 0.15s",
+              }}
+            >
+              Next <ChevronRight size={14} />
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
