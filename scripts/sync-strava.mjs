@@ -18,6 +18,7 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { execSync } from "child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
@@ -106,8 +107,24 @@ function shortDate(iso) {
 }
 
 // ---------------------------------------------------------------------------
-// Strava API
+// Strava API (uses curl for environments where Node fetch is restricted)
 // ---------------------------------------------------------------------------
+
+function curlJson(url, { method = "GET", headers = {}, body } = {}) {
+  const args = ["curl", "-s", "-X", method];
+  for (const [k, v] of Object.entries(headers)) {
+    args.push("-H", `${k}: ${v}`);
+  }
+  if (body) {
+    args.push("-H", "Content-Type: application/json", "-d", JSON.stringify(body));
+  }
+  args.push(url);
+  const out = execSync(args.map((a) => `'${a.replace(/'/g, "'\\''")}'`).join(" "), {
+    encoding: "utf-8",
+    maxBuffer: 50 * 1024 * 1024,
+  });
+  return JSON.parse(out);
+}
 
 async function refreshAccessToken() {
   const { STRAVA_CLIENT_ID, STRAVA_CLIENT_SECRET, STRAVA_REFRESH_TOKEN } =
@@ -119,21 +136,19 @@ async function refreshAccessToken() {
     process.exit(1);
   }
 
-  const res = await fetch("https://www.strava.com/oauth/token", {
+  const data = curlJson("https://www.strava.com/oauth/token", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
+    body: {
       client_id: STRAVA_CLIENT_ID,
       client_secret: STRAVA_CLIENT_SECRET,
       refresh_token: STRAVA_REFRESH_TOKEN,
       grant_type: "refresh_token",
-    }),
+    },
   });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Token refresh failed (${res.status}): ${text}`);
+
+  if (data.errors) {
+    throw new Error(`Token refresh failed: ${JSON.stringify(data)}`);
   }
-  const data = await res.json();
 
   // Strava may rotate the refresh token — persist it back to .env
   if (data.refresh_token && data.refresh_token !== STRAVA_REFRESH_TOKEN) {
@@ -149,27 +164,24 @@ async function refreshAccessToken() {
 }
 
 /** Fetch the activities list (runs with polylines). */
-async function fetchActivities(token, page = 1, perPage = 50) {
+function fetchActivities(token, page = 1, perPage = 50) {
   const url = `https://www.strava.com/api/v3/athlete/activities?page=${page}&per_page=${perPage}`;
-  const res = await fetch(url, {
+  return curlJson(url, {
     headers: { Authorization: `Bearer ${token}` },
   });
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`Fetching activities failed (${res.status}): ${text}`);
-  }
-  return res.json();
 }
 
 /** Fetch a single activity's detailed polyline. */
-async function fetchDetailedPolyline(token, activityId) {
-  const res = await fetch(
-    `https://www.strava.com/api/v3/activities/${activityId}`,
-    { headers: { Authorization: `Bearer ${token}` } }
-  );
-  if (!res.ok) return null; // fall back to summary
-  const data = await res.json();
-  return data.map?.polyline || null;
+function fetchDetailedPolyline(token, activityId) {
+  try {
+    const data = curlJson(
+      `https://www.strava.com/api/v3/activities/${activityId}`,
+      { headers: { Authorization: `Bearer ${token}` } }
+    );
+    return data.map?.polyline || null;
+  } catch {
+    return null; // fall back to summary
+  }
 }
 
 // ---------------------------------------------------------------------------
