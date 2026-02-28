@@ -25,8 +25,8 @@ function createShopIcon(isActive, groupIndex) {
   const size = isActive ? 24 : 16;
   const fill = isActive ? '#E8913A' : getRoastColor(groupIndex);
   return L.divIcon({
-    className: '',
-    html: `<svg viewBox="0 0 24 24" width="${size}" height="${size}" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,${isActive ? '0.3' : '0.15'})); transition: all 0.2s ease;">
+    className: 'bean-marker',
+    html: `<svg viewBox="0 0 24 24" width="${size}" height="${size}" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,${isActive ? '0.3' : '0.15'}));">
       <ellipse cx="12" cy="12" rx="8" ry="10" fill="${fill}" stroke="#fff" stroke-width="2"/>
       <path d="M12 4 C10 8, 10 16, 12 20" fill="none" stroke="#fff" stroke-width="1.5" opacity="0.6"/>
     </svg>`,
