@@ -1,80 +1,113 @@
-import { MapPin } from 'lucide-react';
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { MapPin, Clock } from 'lucide-react';
 import Badge from './Badge';
 import { schedule } from '../data';
 
-const cursive = { fontFamily: '"Caveat", cursive' };
-
 export default function Schedule() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-60px" });
+
   return (
-    <section id="schedule" style={{
-      background: "#f3f1ed",
-      padding: "60px 24px",
-      borderTop: "1px solid #e8e4df",
-      borderBottom: "1px solid #e8e4df",
-    }}>
-      <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+    <section id="schedule" className="schedule-section" ref={ref}>
+      <div className="container">
         <div style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "baseline",
-          marginBottom: 32,
+          marginBottom: 36,
+          flexWrap: "wrap",
+          gap: 12,
         }}>
-          <h2 style={{ fontSize: 36, fontWeight: 700, margin: 0, ...cursive }}>When to show up</h2>
+          <motion.h2
+            className="font-cursive"
+            style={{ fontSize: 40, fontWeight: 700, margin: 0 }}
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.4 }}
+          >
+            When to show up
+          </motion.h2>
           <Badge color="#7BBAD4" bg="#eef7fb">all paces welcome</Badge>
         </div>
+
         <div style={{
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
           gap: 16,
         }}>
           {schedule.map((s, i) => (
-            <div
+            <motion.div
               key={i}
-              className="hover-lift"
-              style={{
-                background: "#fff",
-                borderRadius: 12,
-                padding: 24,
-                border: s.type === "theme" ? "2px solid #7BBAD4" : "1px solid #e8e4df",
-                cursor: "default",
-              }}
+              className={`schedule-card ${s.type === 'theme' ? 'theme' : ''}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
             >
-              <div style={{
-                fontSize: 38,
+              <div className="font-cursive" style={{
+                fontSize: 42,
                 fontWeight: 700,
                 color: s.type === "theme" ? "#7BBAD4" : "#E8913A",
-                ...cursive,
                 letterSpacing: -1,
-                marginBottom: 8,
+                marginBottom: 10,
+                lineHeight: 1,
               }}>
                 {s.day}
               </div>
-              <div style={{ fontSize: 13, color: "#999", marginBottom: 4 }}>{s.full}</div>
-              <div style={{ fontSize: 14, fontWeight: 700, color: "#1a1a1a" }}>{s.time}</div>
+              <div style={{ fontSize: 13, color: "#999", marginBottom: 6 }}>{s.full}</div>
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 6,
+                fontSize: 15,
+                fontWeight: 700,
+                color: "#1a1a1a",
+              }}>
+                <Clock size={13} color="#bbb" />
+                {s.time}
+              </div>
               {s.type === "theme" && (
-                <div style={{ marginTop: 8 }}>
+                <div style={{ marginTop: 12 }}>
                   <Badge color="#7BBAD4" bg="#eef7fb" rotate={0}>theme run!</Badge>
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
-        <div style={{
-          marginTop: 24,
-          background: "#fff",
-          borderRadius: 12,
-          padding: "16px 20px",
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          border: "1px solid #e8e4df",
-        }}>
-          <MapPin size={16} color="#E8913A" />
-          <div>
-            <span style={{ fontWeight: 700, fontSize: 14 }}>Apple Store, 5th Ave</span>
-            <span style={{ color: "#bbb", fontSize: 13, marginLeft: 8 }}>yes, the glass cube</span>
+
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          style={{
+            marginTop: 24,
+            background: "#fff",
+            borderRadius: 14,
+            padding: "18px 24px",
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+            border: "1px solid #e8e4df",
+            boxShadow: "0 2px 12px rgba(0,0,0,0.02)",
+          }}
+        >
+          <div style={{
+            width: 36,
+            height: 36,
+            borderRadius: 10,
+            background: "#fef3e6",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexShrink: 0,
+          }}>
+            <MapPin size={18} color="#E8913A" />
           </div>
-        </div>
+          <div>
+            <span style={{ fontWeight: 700, fontSize: 15 }}>Apple Store, 5th Ave</span>
+            <span style={{ color: "#bbb", fontSize: 13, marginLeft: 10 }}>yes, the glass cube</span>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
