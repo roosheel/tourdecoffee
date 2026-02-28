@@ -493,10 +493,12 @@ body {
   height: 560px;
 }
 .bean-marker {
-  transition: transform 0.15s ease;
   cursor: pointer;
 }
-.bean-marker:hover {
+.bean-marker svg {
+  transition: transform 0.15s ease;
+}
+.bean-marker:hover svg {
   transform: scale(1.5);
 }
 .journal-map {
