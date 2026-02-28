@@ -1,13 +1,29 @@
 import { useState, useRef, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Star, Route, Calendar, MapPin, Eye, EyeOff, Layers } from 'lucide-react';
-import { MapContainer, TileLayer, Polyline, Circle, Marker, Tooltip } from 'react-leaflet';
+import { MapContainer, TileLayer, Polyline, Marker, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import { runs, START_COORDS } from '../data';
 
-function createShopIcon(isActive) {
+// Brown roast shades: light → dark roast
+const ROAST_BROWNS = [
+  '#C4A882', // light roast
+  '#A0785A', // medium-light
+  '#8B6914', // medium
+  '#6F4E37', // medium-dark
+  '#5C3A1E', // dark roast
+  '#3E2723', // espresso
+  '#7B5B3A', // cinnamon
+  '#926C4A', // city roast
+];
+
+function getRoastColor(index) {
+  return ROAST_BROWNS[index % ROAST_BROWNS.length];
+}
+
+function createShopIcon(isActive, groupIndex) {
   const size = isActive ? 24 : 16;
-  const fill = isActive ? '#E8913A' : '#7BBAD4';
+  const fill = isActive ? '#E8913A' : getRoastColor(groupIndex);
   return L.divIcon({
     className: '',
     html: `<svg viewBox="0 0 24 24" width="${size}" height="${size}" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,${isActive ? '0.3' : '0.15'})); transition: all 0.2s ease;">
@@ -232,18 +248,6 @@ export default function Journal() {
                 url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
               />
-              <Circle
-                center={START_COORDS}
-                radius={5000}
-                pathOptions={{
-                  color: "#7BBAD4",
-                  weight: 1.5,
-                  opacity: 0.35,
-                  fillColor: "#7BBAD4",
-                  fillOpacity: 0.04,
-                  dashArray: "6 4",
-                }}
-              />
               {/* Heatmap: show all routes faintly */}
               {routeMode === "heatmap" && runs.map((r, i) => (
                 i !== current && (
@@ -281,7 +285,7 @@ export default function Journal() {
                   <Marker
                     key={gi}
                     position={group.coords}
-                    icon={createShopIcon(isActive)}
+                    icon={createShopIcon(isActive, gi)}
                     eventHandlers={{ click: () => setCurrent(runs.indexOf(group.runs[0])) }}
                   >
                     <Tooltip direction="top" offset={[0, -12]} opacity={0.95}>
