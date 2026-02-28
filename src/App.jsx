@@ -6,6 +6,7 @@ import Schedule from './components/Schedule';
 import CoffeeLog from './components/CoffeeLog';
 import Marquee from './components/Marquee';
 import Journal from './components/Journal';
+import Stats from './components/Stats';
 import Instagram from './components/Instagram';
 import Merch from './components/Merch';
 import Footer from './components/Footer';
@@ -31,6 +32,7 @@ export default function App() {
       <About />
       <Schedule />
       <Journal />
+      <Stats />
 
       <div className="marquee-wrap blue">
         <Marquee speed={28} direction="right">
