@@ -1,6 +1,6 @@
 import { useState, useRef, useMemo, useEffect, useCallback } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Star, Route, Calendar, MapPin, Eye, EyeOff, Layers, ArrowUpDown, Play, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Star, Route, Calendar, MapPin, Eye, EyeOff, Layers, ArrowUpDown, Play, Search, Instagram, Globe } from 'lucide-react';
 import { MapContainer, TileLayer, Polyline, Marker, Tooltip, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import { runs, START_COORDS } from '../data';
@@ -181,6 +181,25 @@ export default function Journal() {
     [run]
   );
   const alsoVisited = currentGroup ? currentGroup.runs.filter(r => r !== run) : [];
+
+  // Get shop ig/website from any run in the group that has it
+  const shopIg = useMemo(() => {
+    if (run.ig) return run.ig;
+    if (currentGroup) {
+      const match = currentGroup.runs.find(r => r.ig);
+      if (match) return match.ig;
+    }
+    return "";
+  }, [run, currentGroup]);
+
+  const shopWebsite = useMemo(() => {
+    if (run.website) return run.website;
+    if (currentGroup) {
+      const match = currentGroup.runs.find(r => r.website);
+      if (match) return match.website;
+    }
+    return "";
+  }, [run, currentGroup]);
 
   const handleSelectRun = useCallback((i) => {
     setCurrent(i);
@@ -547,6 +566,58 @@ export default function Journal() {
                       color={j < run.stars ? "#E8913A" : "#e0dcd7"}
                     />
                   ))}
+                </div>
+              )}
+              {(shopIg || shopWebsite) && (
+                <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
+                  {shopIg && (
+                    <a
+                      href={`https://instagram.com/${shopIg}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 6,
+                        padding: "6px 12px",
+                        fontSize: 12,
+                        fontWeight: 600,
+                        color: "#E8913A",
+                        background: "#fef8f0",
+                        border: "1px solid #f0d9b5",
+                        borderRadius: 8,
+                        textDecoration: "none",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      <Instagram size={13} />
+                      @{shopIg}
+                    </a>
+                  )}
+                  {shopWebsite && (
+                    <a
+                      href={shopWebsite}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 6,
+                        padding: "6px 12px",
+                        fontSize: 12,
+                        fontWeight: 600,
+                        color: "#7BBAD4",
+                        background: "#eef7fb",
+                        border: "1px solid #c8e2ef",
+                        borderRadius: 8,
+                        textDecoration: "none",
+                        transition: "all 0.15s",
+                      }}
+                    >
+                      <Globe size={13} />
+                      Website
+                    </a>
+                  )}
                 </div>
               )}
               {run.note && (

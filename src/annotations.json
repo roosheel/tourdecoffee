@@ -5,7 +5,9 @@
     "hood": "Neighborhood",
     "stars": 4,
     "note": "Your review of the shop.",
-    "photos": 3
+    "photos": 3,
+    "ig": "coffeeshop",
+    "website": "https://coffeeshop.com"
   },
   "17518607631": {
     "name": "Tour de Coffee: Ferrane Bakery",
