@@ -643,6 +643,14 @@ body {
   .journal-map {
     grid-row: auto;
   }
+  .map-overlay {
+    position: static;
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+    z-index: auto;
+  }
 
   .schedule-card {
     padding: 22px;
