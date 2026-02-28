@@ -195,7 +195,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
+  height: 80px;
 }
 .nav-links {
   display: flex;
@@ -258,7 +258,7 @@ body {
 .mobile-menu {
   display: none;
   position: fixed;
-  top: 64px;
+  top: 80px;
   left: 0;
   right: 0;
   background: rgba(250, 249, 247, 0.98);
