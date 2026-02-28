@@ -1,27 +1,55 @@
 import { useState, useMemo, useRef } from 'react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { Star, Search, Coffee, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Star, Search, Coffee, ChevronLeft, ChevronRight, ArrowUpDown } from 'lucide-react';
 import { coffeeLog } from '../data';
 import tdcDecoration from '../assets/tdc-decoration.png';
 
 const PAGE_SIZE_OPTIONS = [10, 20, 30];
+
+const SORT_OPTIONS = [
+  { key: "recent", label: "Recent" },
+  { key: "name", label: "Name" },
+  { key: "distance-desc", label: "Distance" },
+  { key: "stars-desc", label: "Rating" },
+];
 
 export default function CoffeeLog() {
   const [expanded, setExpanded] = useState(null);
   const [search, setSearch] = useState('');
   const [pageSize, setPageSize] = useState(10);
   const [page, setPage] = useState(0);
+  const [sortBy, setSortBy] = useState("recent");
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   const filtered = useMemo(() => {
-    if (!search.trim()) return coffeeLog;
-    const q = search.toLowerCase();
-    return coffeeLog.filter(s =>
-      s.n.toLowerCase().includes(q) ||
-      (s.h && s.h.toLowerCase().includes(q))
-    );
-  }, [search]);
+    let items = [...coffeeLog];
+
+    // Filter
+    if (search.trim()) {
+      const q = search.toLowerCase();
+      items = items.filter(s =>
+        s.n.toLowerCase().includes(q) ||
+        (s.h && s.h.toLowerCase().includes(q))
+      );
+    }
+
+    // Sort
+    switch (sortBy) {
+      case "name":
+        items.sort((a, b) => a.n.localeCompare(b.n));
+        break;
+      case "distance-desc":
+        items.sort((a, b) => b.d - a.d);
+        break;
+      case "stars-desc":
+        items.sort((a, b) => b.s - a.s);
+        break;
+      // "recent" is default order from data
+    }
+
+    return items;
+  }, [search, sortBy]);
 
   const totalPages = Math.ceil(filtered.length / pageSize);
   const paginated = filtered.slice(page * pageSize, (page + 1) * pageSize);
@@ -34,6 +62,12 @@ export default function CoffeeLog() {
 
   const handleSearchChange = (e) => {
     setSearch(e.target.value);
+    setPage(0);
+    setExpanded(null);
+  };
+
+  const handleSort = (key) => {
+    setSortBy(key);
     setPage(0);
     setExpanded(null);
   };
@@ -103,9 +137,24 @@ export default function CoffeeLog() {
             gap: 8,
           }}
         >
-          <span style={{ color: "#999", fontSize: 12 }}>
-            Showing {Math.min(page * pageSize + 1, filtered.length)}–{Math.min((page + 1) * pageSize, filtered.length)} of {filtered.length}
-          </span>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+            <span style={{ color: "#999", fontSize: 12 }}>
+              Showing {Math.min(page * pageSize + 1, filtered.length)}–{Math.min((page + 1) * pageSize, filtered.length)} of {filtered.length}
+            </span>
+            <span style={{ color: "#e0dcd7", fontSize: 12 }}>|</span>
+            <div className="sort-controls">
+              <ArrowUpDown size={11} color="#bbb" />
+              {SORT_OPTIONS.map(opt => (
+                <button
+                  key={opt.key}
+                  onClick={() => handleSort(opt.key)}
+                  className={`sort-btn ${sortBy === opt.key ? 'active' : ''}`}
+                >
+                  {opt.label}
+                </button>
+              ))}
+            </div>
+          </div>
           <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
             <span style={{ color: "#999", fontSize: 12, marginRight: 4 }}>Per page:</span>
             {PAGE_SIZE_OPTIONS.map(size => (

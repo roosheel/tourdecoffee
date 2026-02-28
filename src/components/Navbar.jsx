@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import tdcLogo from '../assets/tdc-logo.png';
 
-const NAV_ITEMS = ["about", "schedule", "journal", "log", "instagram", "merch"];
+const NAV_ITEMS = ["about", "schedule", "journal", "stats", "log", "instagram", "merch"];
 
 export default function Navbar({ scrolled, onNav }) {
   const [mobileOpen, setMobileOpen] = useState(false);
