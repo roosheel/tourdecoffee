@@ -207,8 +207,8 @@ async function main() {
     page++;
   }
 
-  // Filter to runs that have a route polyline and "TdC" or "Tour de Coffee" in the title
-  const tdcPattern = /tdc|tour de coffee/i;
+  // Filter to runs that have a route polyline and matching keywords in the title
+  const tdcPattern = /tdc|tour de coffee|coffee|tour/i;
   const runActivities = allActivities.filter(
     (a) => a.type === "Run" && a.map?.summary_polyline && tdcPattern.test(a.name)
   );
