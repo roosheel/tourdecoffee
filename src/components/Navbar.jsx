@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Home } from 'lucide-react';
 import tdcLogo from '../assets/tdc-logo.png';
 
 const NAV_ITEMS = ["about", "schedule", "journal", "log", "instagram", "merch"];
@@ -17,15 +16,14 @@ export default function Navbar({ scrolled, onNav }) {
     <>
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-inner">
-          <motion.div
+          <motion.img
             onClick={() => handleNav("top")}
-            style={{ display: "flex", alignItems: "center", gap: 10, cursor: "pointer" }}
+            src={tdcLogo}
+            alt="TDC"
+            style={{ height: 52, cursor: "pointer" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-          >
-            <Home size={28} color="#E8913A" strokeWidth={2.2} />
-            <img src={tdcLogo} alt="TDC" style={{ height: 48 }} />
-          </motion.div>
+          />
           <div className="nav-links">
             {NAV_ITEMS.map((item, i) => (
               <motion.span

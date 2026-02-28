@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, ChevronDown, Home } from 'lucide-react';
 import Badge from './Badge';
 import Marquee from './Marquee';
 import tdcTitle from '../assets/tdc-title.png';
@@ -74,7 +74,12 @@ export default function Hero({ onNav }) {
               margin: "0 0 40px",
             }}
           >
-            We meet at the Apple Store on 5th Ave at 6:30am and run to a different coffee shop every single time. That's the whole thing.
+            We meet at the{" "}
+            <span style={{ fontWeight: 600 }}>
+              <Home size={16} style={{ display: "inline", verticalAlign: "middle", marginBottom: 2 }} />
+              {" "}Apple Store
+            </span>
+            {" "}on 5th Ave at 6:30am and run to a different coffee shop every single time. That's the whole thing.
           </motion.p>
 
           <motion.div
