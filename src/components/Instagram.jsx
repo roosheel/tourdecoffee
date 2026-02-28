@@ -1,19 +1,15 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { Instagram as InstagramIcon, ArrowUpRight } from 'lucide-react';
+import instagramPosts from '../instagram-data';
+
+const BASE = import.meta.env.BASE_URL;
 
 export default function Instagram() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
-  useEffect(() => {
-    if (!document.querySelector('script[src*="elfsight"]')) {
-      const script = document.createElement("script");
-      script.src = "https://elfsightcdn.com/platform.js";
-      script.async = true;
-      document.head.appendChild(script);
-    }
-  }, []);
+  const hasPosts = instagramPosts.length > 0;
 
   return (
     <section id="instagram" className="instagram-section" ref={ref}>
@@ -60,13 +56,42 @@ export default function Instagram() {
             follow us <ArrowUpRight size={13} />
           </motion.a>
         </div>
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.4, delay: 0.15 }}
-        >
-          <div className="elfsight-app-f17fe89a-6f10-4822-b8f9-ea5747bb42f3" data-elfsight-app-lazy></div>
-        </motion.div>
+
+        {hasPosts ? (
+          <div className="ig-grid">
+            {instagramPosts.map((post, i) => (
+              <motion.a
+                key={post.id}
+                href={post.permalink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ig-grid-item"
+                initial={{ opacity: 0, y: 16 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.35, delay: 0.08 * i }}
+              >
+                <img
+                  src={`${BASE}${post.src}`}
+                  alt={post.caption || "Tour de Coffee"}
+                  loading="lazy"
+                />
+                <div className="ig-grid-overlay">
+                  <span>{post.caption || "View post"}</span>
+                </div>
+              </motion.a>
+            ))}
+          </div>
+        ) : (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.4, delay: 0.15 }}
+            className="ig-empty"
+          >
+            <InstagramIcon size={32} color="#d4cfc9" />
+            <p>Run <code>npm run sync:instagram</code> to pull in posts.</p>
+          </motion.div>
+        )}
       </div>
     </section>
   );

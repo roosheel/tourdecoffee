@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "sync": "node scripts/sync-strava.mjs",
-    "sync:detailed": "node scripts/sync-strava.mjs --detailed"
+    "sync:detailed": "node scripts/sync-strava.mjs --detailed",
+    "sync:instagram": "node scripts/sync-instagram.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.34.3",
