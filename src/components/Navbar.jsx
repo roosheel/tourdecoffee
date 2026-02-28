@@ -20,7 +20,7 @@ export default function Navbar({ scrolled, onNav }) {
             onClick={() => handleNav("top")}
             src={tdcLogo}
             alt="TDC"
-            style={{ height: 38, cursor: "pointer" }}
+            style={{ height: 52, cursor: "pointer" }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           />
