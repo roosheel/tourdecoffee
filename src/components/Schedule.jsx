@@ -31,6 +31,40 @@ export default function Schedule() {
           <Badge color="#7BBAD4" bg="#eef7fb">all paces welcome</Badge>
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          style={{
+            marginBottom: 24,
+            background: "#fff",
+            borderRadius: 14,
+            padding: "18px 24px",
+            display: "flex",
+            alignItems: "center",
+            gap: 14,
+            border: "1px solid #e8e4df",
+            boxShadow: "0 2px 12px rgba(0,0,0,0.02)",
+          }}
+        >
+          <div style={{
+            width: 36,
+            height: 36,
+            borderRadius: 10,
+            background: "#fef3e6",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexShrink: 0,
+          }}>
+            <MapPin size={18} color="#E8913A" />
+          </div>
+          <div>
+            <span style={{ fontWeight: 700, fontSize: 15 }}>Apple Store, 5th Ave</span>
+            <span style={{ color: "#bbb", fontSize: 13, marginLeft: 10 }}>yes, the glass cube</span>
+          </div>
+        </motion.div>
+
         <div style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
@@ -42,7 +76,7 @@ export default function Schedule() {
               className={`schedule-card ${s.type === 'theme' ? 'theme' : ''}`}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.4, delay: 0.1 + i * 0.08 }}
+              transition={{ duration: 0.4, delay: 0.15 + i * 0.08 }}
             >
               <div className="font-cursive" style={{
                 fontSize: 42,
@@ -74,40 +108,6 @@ export default function Schedule() {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.4, delay: 0.5 }}
-          style={{
-            marginTop: 24,
-            background: "#fff",
-            borderRadius: 14,
-            padding: "18px 24px",
-            display: "flex",
-            alignItems: "center",
-            gap: 14,
-            border: "1px solid #e8e4df",
-            boxShadow: "0 2px 12px rgba(0,0,0,0.02)",
-          }}
-        >
-          <div style={{
-            width: 36,
-            height: 36,
-            borderRadius: 10,
-            background: "#fef3e6",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexShrink: 0,
-          }}>
-            <MapPin size={18} color="#E8913A" />
-          </div>
-          <div>
-            <span style={{ fontWeight: 700, fontSize: 15 }}>Apple Store, 5th Ave</span>
-            <span style={{ color: "#bbb", fontSize: 13, marginLeft: 10 }}>yes, the glass cube</span>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

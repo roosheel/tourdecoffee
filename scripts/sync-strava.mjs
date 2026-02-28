@@ -262,6 +262,8 @@ async function main() {
       shopCoords,
       route,
       photos: ann.photos || 0,
+      ig: ann.ig || "",
+      website: ann.website || "",
     };
   });
 
@@ -328,6 +330,8 @@ export const MAP_RADIUS = 50;
         stars: 0,
         note: "",
         photos: 0,
+        ig: "",
+        website: "",
       };
       newCount++;
     }

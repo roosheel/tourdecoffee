@@ -5,1371 +5,1763 @@
     "hood": "Neighborhood",
     "stars": 4,
     "note": "Your review of the shop.",
-    "photos": 3
+    "photos": 3,
+    "ig": "coffeeshop",
+    "website": "https://coffeeshop.com"
   },
   "17518607631": {
     "name": "Tour de Coffee: Ferrane Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "ferranebakery",
+    "website": "https://ferranebakery.com/"
   },
   "17486098661": {
     "name": "Tour de Coffee x Bombas: Georgie’s Cafe & Bar",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "georgies_les",
+    "website": "https://www.georgies.cafe/"
   },
   "17439575184": {
     "name": "Tour de Coffee: Spongies Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "spongiescafe",
+    "website": ""
   },
   "17416043050": {
     "name": "Tour de Coffee: Stone Street Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "stonecoffeecompany",
+    "website": "https://stonestreetcoffee.com/"
   },
   "17341697395": {
     "name": "Tour de Coffee: Artara Coffee (Cambodian)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "artaracoffee",
+    "website": "https://artaracoffee.com/"
   },
   "17260124094": {
     "name": "Tour de Coffee: Cositas Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cositascafenyc",
+    "website": "https://www.cositascafenyc.com/"
   },
   "17127763815": {
     "name": "Tour de Coffee: Zeppola Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "zeppolabakery",
+    "website": "https://zeppolabakery.com/"
   },
   "17104047666": {
     "name": "Tour de Coffee: Not As Bitter",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "notasbitter",
+    "website": "https://www.notasbitter.com/"
   },
   "17096704058": {
     "name": "Tour de Coffee: Café Habibti",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafehabibti",
+    "website": "https://www.cafehabibti.com/"
   },
   "17052588951": {
     "name": "Tour de Coffee: Château le Woof",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "chateaulewoof",
+    "website": "https://www.chateaulewoof.com/"
   },
   "16969172517": {
     "name": "Tour de Coffee: SALSWEE",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "salswee",
+    "website": "https://salswee.com/"
   },
   "16945399545": {
     "name": "Tour de Coffee: Thea",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "theabakerynyc",
+    "website": "https://www.theabakerynyc.com/"
   },
   "16898324865": {
     "name": "The last sunrise of 2025 with TdC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "16830798548": {
     "name": "TdC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "16749296452": {
     "name": "Tour de Coffee: Dark Matter Coffee - Adios Amigos",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "darkmattercoffee",
+    "website": "https://www.darkmattercoffee.com/"
   },
   "16703575682": {
     "name": "Tour de Coffee: St Kilda Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "stkildacoffeenyc",
+    "website": "https://www.stkildacoffee.com/"
   },
   "16685129097": {
     "name": "Tour de Coffee: La Cabra 🐐",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "16678957103": {
     "name": "Tour de Coffee: Kora",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "fromkora",
+    "website": "https://fromkora.com/"
   },
   "16639576119": {
     "name": "Tour de Coffee: Do Not Feed Alligators 🐊",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "donotfeedalligators",
+    "website": "https://donotfeedalligators.com/"
   },
   "16618688223": {
     "name": "Tour de Coffee: La Tazza D'Oro NYC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "la_tazza_doro_nyc",
+    "website": "https://www.latazzadoro.us/"
   },
   "16612818055": {
     "name": "TdC x MTA: Staten Island Railway",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "16572025274": {
     "name": "Tour de Coffee: Manjul Coffee & Clothing",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "manjulcoffee",
+    "website": "https://manjul.co/"
   },
   "16553030618": {
     "name": "Tour de Coffee: Rosetta Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "rosettabakery",
+    "website": "https://www.rosettabakery.com/"
   },
   "16504886920": {
     "name": "Tour de Coffee: Little Flower Cafe 🌧️",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "littleflowercafe",
+    "website": "https://littleflower.nyc/"
   },
   "16484806686": {
     "name": "Tour de Coffee: Verse",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "versecafenyc",
+    "website": "https://www.versenyc.co/"
   },
   "16477086420": {
     "name": "Tour de Coffee: KIJITORA",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kijitorabrooklyn",
+    "website": "https://www.kijitorabrooklyn.com/"
   },
   "16436288111": {
     "name": "Tour de Coffee: Librae Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "libraebakery",
+    "website": "https://www.libraebakery.com/"
   },
   "16414267773": {
     "name": "Tour de Coffee: Slate Cafe Upper West Side",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "slatecafenyc",
+    "website": "https://www.slatecafe.com/"
   },
   "16407333817": {
     "name": "Tour de Coffee: SEY Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "seycoffee",
+    "website": "https://www.seycoffee.com/"
   },
   "16364202598": {
     "name": "Tour de Coffee: LPQ",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lepainquotidienus",
+    "website": "https://www.lepainquotidien.com/us/en"
   },
   "16291539678": {
     "name": "Tour de Coffee: Julien Boulangerie",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "julienboulangerie",
+    "website": "https://www.julienboulangerie.com/"
   },
   "16270274002": {
     "name": "Tour de Coffee: Gold coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "the_gold_coffee_official",
+    "website": "https://goldcoffee.us/"
   },
   "16262404205": {
     "name": "Tour de Coffee: Gem Home",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "gem.nyc",
+    "website": "https://www.gemhomenyc.com/"
   },
   "16221568465": {
     "name": "Tour de Coffee: Solid State Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "solidstatecoffeenyc",
+    "website": "https://solidstatecoffee.com/"
   },
   "16200155085": {
     "name": "Tour de Coffee: Le Cafe Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lecafecoffee",
+    "website": "https://lecafecoffee.com/"
   },
   "16193775862": {
     "name": "Tour de Coffee: Elbow Bread",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "elbowludlow",
+    "website": "https://www.elbowbread.shop/"
   },
   "16149290338": {
     "name": "Tour de Coffee: Cafe Ambrosia New York",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafeambrosianewyork",
+    "website": ""
   },
   "16126534369": {
     "name": "Tour de Coffee: dae day coffee 🌧️",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "daedaycoffee",
+    "website": "https://www.daeday.com/"
   },
   "16073983833": {
     "name": "Tour de Coffee: Remi Flower & Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "remi.nyc",
+    "website": "https://www.reminyc.com/"
   },
   "16051380000": {
     "name": "Tour de Coffee: Inès",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "ines.nyc",
+    "website": "https://www.inesnyc.com/"
   },
   "15998786399": {
     "name": "Tour de Coffee: SALSWEE",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "salswee",
+    "website": "https://salswee.com/"
   },
   "15975041396": {
     "name": "Tour de Coffee: Little Canal",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "littlecanal",
+    "website": "https://www.littlecanal.com/"
   },
   "15966616484": {
     "name": "Tour de Coffee: Maru Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "marucoffeela",
+    "website": "https://www.marucoffee.com/"
   },
   "15920727626": {
     "name": "Tour de Coffee: L'Ami Pierre - French Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lamipierreus",
+    "website": "https://www.lamipierre.com/"
   },
   "15898495547": {
     "name": "Tour de Coffee: Capital One Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "capitalonecafe",
+    "website": "https://www.capitalone.com/local/"
   },
   "15888872370": {
     "name": "Tour de Coffee: Mary O's Irish Soda Bread Shop",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "maryosirishpub",
+    "website": "https://maryos.nyc/"
   },
   "15842338555": {
     "name": "Tour de Coffee: MAMALI NYC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "mamalinyc",
+    "website": "https://mamalinyc.com/"
   },
   "15819210665": {
     "name": "Tour de Coffee: CupSoul Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cupsoulcafe",
+    "website": "https://www.cupsoul.com/"
   },
   "15811455791": {
     "name": "Tour de Coffee: Mottley Kitchen (+ Bronx 10 miler cheering 📣)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "mottleykitchen",
+    "website": "https://www.mottleykitchen.com/"
   },
   "15763290762": {
     "name": "Tour de Coffee: Radio Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "radiobakerynyc",
+    "website": "https://www.radiobakery.nyc/"
   },
   "15740586202": {
     "name": "Tour de Coffee: Amano Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "amano_cafe",
+    "website": "https://www.amano-cafe.com/"
   },
   "15682588763": {
     "name": "Tour de Coffee: Afficionado Coffee Roasters",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "afficionado_coffee",
+    "website": "https://www.afficionadocoffee.com/"
   },
   "15660193424": {
     "name": "Tour de Coffee: PARK at KIMS",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "parkatkims",
+    "website": ""
   },
   "15649485338": {
     "name": "Tour de Coffee: McDonald’s",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "15604262221": {
     "name": "Tour de Coffee: Caffe Aronne",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "caffearonne",
+    "website": "https://www.caffearonne.com/"
   },
   "15579627566": {
     "name": "Tour de Coffee: Vineapple (running part)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "vineapple71",
+    "website": "https://www.vineapple.cafe/"
   },
   "15571438718": {
     "name": "Tour de Coffee: Papa d’Amour",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "papadamournyc",
+    "website": "https://www.papadamourny.com/"
   },
   "15524228265": {
     "name": "Tour de Coffee: Uptaco - Breakfast Tacos & More",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "uptaconyc",
+    "website": "https://www.uptaco.nyc"
   },
   "15500275273": {
     "name": "Tour de Coffee: drip coffee makers",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "dripcoffeenyc",
+    "website": "https://www.dripcoffeenyc.com/"
   },
   "15339469978": {
     "name": "Tour de Coffee: Smør Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "smorbakery.nyc",
+    "website": "https://www.smorbakerynyc.com/"
   },
   "15286009259": {
     "name": "Tour de Coffee: Saltwater Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "saltwaternyc",
+    "website": "https://www.saltwaternyc.com/"
   },
   "15263090250": {
     "name": "Tour de Coffee: fontainhas",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "fontainhas_dumbo",
+    "website": "https://www.fontainhasnyc.com/"
   },
   "15254229002": {
     "name": "Tour de Coffee: Dominique Ansel Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "dominiqueanselbakery",
+    "website": "https://www.dominiqueansel.com/"
   },
   "15186311255": {
     "name": "Tour de Coffee: Picky Barista",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "pickybaristany",
+    "website": "https://pickybarista.com/"
   },
   "15177489224": {
     "name": "Tour de Coffee: Bench Flour Bakers",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "benchflourbakers",
+    "website": "https://benchflournyc.com/"
   },
   "15132672709": {
     "name": "Tour de Coffee: Luckin Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "luckin_coffeeus",
+    "website": "https://www.luckincoffee.us"
   },
   "15110465963": {
     "name": "Tour de Coffee: WatchHouse Chrysler Building",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "watchhouse",
+    "website": "https://watchhouse.com"
   },
   "15101318751": {
     "name": "Tour de Coffee: La Cabra Roastery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "15056692239": {
     "name": "Tour de Coffee: PlantShed Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "plantshednyc",
+    "website": "https://www.plantshed.com"
   },
   "15034570804": {
     "name": "Tour de Coffee: WatchHouse (1st Birthday of the club)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "watchhouse",
+    "website": "https://watchhouse.com"
   },
   "14983067192": {
     "name": "Tour de Coffee: Felix Roasting Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "felixroastingco",
+    "website": "https://felixroastingco.com"
   },
   "14962335684": {
     "name": "Tour de Coffee: Manhattanville Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "manhattanvillecoffee",
+    "website": "https://www.manhattanvillecoffee.com"
   },
   "14447178067": {
     "name": "Tour de Coffee: Nick + Sons Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "nickandsonsbakery",
+    "website": "https://www.nickandsonsbakery.com"
   },
   "14438414150": {
     "name": "TdC x MTA: M Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14407433014": {
     "name": "Tour de Coffee: Gemina Coffee Shop",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "geminacoffeeshop",
+    "website": ""
   },
   "14386902497": {
     "name": "Tour de Coffee: Blue Bottle x Marimekko",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "bluebottle",
+    "website": "https://bluebottlecoffee.com"
   },
   "14375898374": {
     "name": "Tour de Coffee: Bánh by Lauren",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "banhbylauren",
+    "website": "https://banhbylauren.com"
   },
   "14367368337": {
     "name": "TdC x MTA: 4 Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14333512762": {
     "name": "Tour de Coffee: Black Fox Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "blackfoxcoffeeco",
+    "website": "https://blackfoxcoffee.com"
   },
   "14311316246": {
     "name": "Tour de Coffee: Koré Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kore.coffee",
+    "website": "http://korecoffee.nyc"
   },
   "14292471617": {
     "name": "TdC x MTA: Z Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14243845910": {
     "name": "Tour de Coffee: Cinico Coffee Company",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "ciniconyc",
+    "website": "https://cinicocoffee.com"
   },
   "14234791219": {
     "name": "Tour de Coffee: Laurel Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "laurelbakerynyc",
+    "website": "https://www.laurelbakery.com"
   },
   "14226179139": {
     "name": "TdC x MTA: F Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14195647661": {
     "name": "Tour de Coffee: Ground Support Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "groundsupportcafe",
+    "website": "https://www.groundsupportnyc.com"
   },
   "14174369299": {
     "name": "Tour de Coffee: The Cafe at Cornell Tech",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14126840110": {
     "name": "Tour de Coffee: Somedays Bakery LIC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "somedaysbakery",
+    "website": "https://www.somedaysbakery.com/"
   },
   "14106560158": {
     "name": "Tour de Coffee: Larry's Ca Phe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "larryscaphe",
+    "website": "https://www.larryscaphe.com/"
   },
   "14088849538": {
     "name": "TdC x MTA: 6 Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "14058358166": {
     "name": "Tour de Coffee: White Noise Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "whitenoisecoffeeco",
+    "website": "https://whitenoisecoffee.com/"
   },
   "14038635651": {
     "name": "Tour de Coffee: Aux Merveilleux de Fred",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "auxmerveilleuxdefrednyc",
+    "website": "https://www.marvelousbyfred.com/"
   },
   "14022329584": {
     "name": "TdC x MTA: E Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13992686893": {
     "name": "Tour de Coffee: Kaafi by Chaiguy",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kaafinyc",
+    "website": "https://www.kaafiny.com/"
   },
   "13972252617": {
     "name": "Tour de Coffee: Vibrant Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "vibrant_coffee_nyc",
+    "website": ""
   },
   "13965951626": {
     "name": "Tour de Coffee: Georgie’s Cafe & Bar",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "georgies_les",
+    "website": "https://www.georgies.cafe/"
   },
   "13956224163": {
     "name": "TdC x MTA: J Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13927176316": {
     "name": "Tour de Coffee: % Arabica",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "arabicausa",
+    "website": "https://arabicacoffeeus.com/"
   },
   "13907665626": {
     "name": "Tour de Coffee: Qamaria Yemeni Coffee Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "qamariacoffee",
+    "website": "https://www.qamariacoffee.com/"
   },
   "13861608096": {
     "name": "Tour de Coffee: Café Joyeux",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafejoyeuxus",
+    "website": "https://us.cafejoyeux.com/"
   },
   "13841955909": {
     "name": "Tour de Coffee: Manjul Coffee & Clothing",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "manjulcoffee",
+    "website": "https://manjul.co/"
   },
   "13816739517": {
     "name": "TdC x FRC",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13796249767": {
     "name": "Tour de Coffee: Under Pressure Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "underpressurecoffeenyc",
+    "website": "https://www.underpressurecoffee.com/"
   },
   "13778594836": {
     "name": "Tour de Coffee: Birch Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "birchcoffee",
+    "website": "https://www.birchcoffee.com/"
   },
   "13770292253": {
     "name": "Tour de Coffee: Red Rover",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "redroverbk",
+    "website": "https://www.redrover.nyc"
   },
   "13762541632": {
     "name": "TdC x MTA: Q Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13733133301": {
     "name": "Tour de Coffee: Hani’s bakery + café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "hanisbakerynyc",
+    "website": "https://www.hanisnyc.com/"
   },
   "13714043417": {
     "name": "Tour de Coffee: La Cabra",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "13707282520": {
     "name": "TdC x MTA: G Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13697451539": {
     "name": "TdC x MTA: L Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13670176442": {
     "name": "Tour de Coffee: Bird & Branch Coffee Roasters",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "birdandbranchnyc",
+    "website": "https://birdandbranch.com/"
   },
   "13651426051": {
     "name": "Tour de Coffee: Felix Roasting Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "felixroastingco",
+    "website": "https://felixroastingco.com"
   },
   "13645248493": {
     "name": "Tour de Coffee: “Sunday Morning” 🌧️",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13635619906": {
     "name": "TdC x MTA: 1 Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13609059342": {
     "name": "Tour de Coffee: The Monkey Cup",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "themonkeycup",
+    "website": "https://www.themonkeycup.com/"
   },
   "13591130861": {
     "name": "Tour de Coffee: Daily Provisions – Rockefeller Center",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "dailyprov",
+    "website": "https://www.dailyprovisions.co/"
   },
   "13585609019": {
     "name": "Tour de Coffee: Supermoon Bakehouse",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "supermoonbakehouse",
+    "website": "https://www.supermoonbakehouse.com/"
   },
   "13574160527": {
     "name": "TdC x MTA: S (42 St) Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13573230049": {
     "name": "TdC x MTA: S (Franklin Av) Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13546801954": {
     "name": "Tour de Coffee: Cafe MSMN",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafemsmn",
+    "website": ""
   },
   "13528753333": {
     "name": "Tour de Coffee: Qahwah House - Broadway",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "qahwah_house",
+    "website": "https://qahwahhouse.com/"
   },
   "13523421735": {
     "name": "TdC x MTA: 7 Train",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13484009101": {
     "name": "Tour de Coffee: Spongies Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "spongiescafe",
+    "website": ""
   },
   "13465968727": {
     "name": "Tour de Coffee: The Hungarian Pastry Shop",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "hungarianpastryshopnyc",
+    "website": "https://www.hungarianpastryshop.com/"
   },
   "13424590115": {
     "name": "Tour de Coffee: Ground Central Coffee Company",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "groundcentral",
+    "website": "https://www.groundcentral.com/"
   },
   "13405177633": {
     "name": "Tour de Coffee: Gregorys Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "gregoryscoffee",
+    "website": "https://gregoryscoffee.com/"
   },
   "13400939585": {
     "name": "Tour de Coffee: Sip & Play",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "sipnplaynyc",
+    "website": "https://www.sipnplaynyc.com/"
   },
   "13362319184": {
     "name": "Tour de Coffee: Charlotte Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "charlottecafeofficial",
+    "website": "https://www.charlottecafe.com/"
   },
   "13343019614": {
     "name": "Tour de Coffee: Madame Bonté Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "madamebonte",
+    "website": "https://www.madamebonte.com/"
   },
   "13335268121": {
     "name": "Tour de Coffee: Bubby’s",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "bubbys",
+    "website": "https://www.bubbys.com/"
   },
   "13299121595": {
     "name": "Tour de Coffee: Sote Coffee Roasters",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "sotecoffeeroasters",
+    "website": "https://sotecoffeeroasters.com/"
   },
   "17013246955": {
     "name": "Tour de Theater | Architecture",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "theabakerynyc",
+    "website": "https://www.theabakerynyc.com/"
   },
   "16846086205": {
     "name": "Friday coffee miles",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "16804253966": {
     "name": "Tour de WHITE NOISE",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "whitenoisecoffeeco",
+    "website": "https://whitenoisecoffee.com/"
   },
   "16767569802": {
     "name": "Tour de Tree 🎄🎄",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "16394313409": {
     "name": "Saturday coffee run",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "15209809515": {
     "name": "Tour de Tea: cha &",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "chaandbar",
+    "website": "https://www.chaandbar.com/"
   },
   "13143693355": {
     "name": "Tour de Tree 🎄",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "13127627933": {
     "name": "Coffee tour goes to Capital One Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "capitalonecafe",
+    "website": "https://www.capitalone.com/local/"
   },
   "13078633777": {
     "name": "Coffee tour goes to Café Bilboquet",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafebilboquet",
+    "website": "https://cafebilboquet.com/"
   },
   "13030273121": {
     "name": "Coffee tour goes to Pavé",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "pave_nyc",
+    "website": "https://www.pave46.com/"
   },
   "12944167111": {
     "name": "Coffee tour goes to Paper Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "papercoffeenyc",
+    "website": ""
   },
   "12929106255": {
     "name": "Coffee tour goes to Seven Grams Caffe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "sevengramscaffe",
+    "website": "https://sevengramscaffe.com/"
   },
   "12926187961": {
     "name": "Morning coffee jaunt to % Arabica",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "arabicausa",
+    "website": "https://arabicacoffeeus.com/"
   },
   "12892013842": {
     "name": "Coffee tour goes to La Cabra (once again)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "12878938606": {
     "name": "Coffee tour goes to Librae Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "libraebakery",
+    "website": "https://www.libraebakery.com/"
   },
   "12836815623": {
     "name": "Coffee tour goes to Intelligentsia Café",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "intelligentsiacoffee",
+    "website": "https://www.intelligentsia.com/"
   },
   "12824865657": {
     "name": "Coffee tour goes to Culture Espresso (again)",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cultureespresso",
+    "website": "https://www.cultureespresso.com"
   },
   "12781115060": {
     "name": "Coffee tour goes to Heritage Grand Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "heritagegrandbakery",
+    "website": "https://www.heritagegrandbakery.com/"
   },
   "12767731186": {
     "name": "Coffee tour goes to Kaffe Landskap",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kaffelandskapnyc",
+    "website": "https://www.kaffelandskap.com/"
   },
   "12725694604": {
     "name": "Coffee tour goes King’s Street Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kingsstreetcoffeenyc",
+    "website": "https://kingsstreetcoffee.com"
   },
   "12708296813": {
     "name": "Coffee tour goes to Culture Espresso",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cultureespresso",
+    "website": "https://www.cultureespresso.com"
   },
   "12702500405": {
     "name": "Coffee tour goes to Clinton St. Baking Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "clintonstbakingco",
+    "website": "https://www.clintonstreetbaking.com/"
   },
   "12669867871": {
     "name": "Coffee tour goes to Solid State Coffee + the last 10",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "solidstatecoffeenyc",
+    "website": "https://solidstatecoffee.com/"
   },
   "12652848080": {
     "name": "Coffee tour goes to St Jardim",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "stjardimnyc",
+    "website": "https://www.stjardimnyc.com/"
   },
   "12614903590": {
     "name": "Coffee tour goes to St. George Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "stgeorge_nyc",
+    "website": "https://stgeorgecoffee.com"
   },
   "12597283112": {
     "name": "Coffee tour goes to Little Collins",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "littlecollinsnyc",
+    "website": "https://www.littlecollinsnyc.com/"
   },
   "12556963845": {
     "name": "Coffee tour goes to Salswee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "salswee",
+    "website": "https://salswee.com/"
   },
   "12539788131": {
     "name": "Coffee tour goes to Coffee Project New York",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "coffeeprojectny",
+    "website": "https://coffeeprojectny.com/"
   },
   "12535680481": {
     "name": "Coffee tour goes to Nook 🌧️",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "nook_bklyn",
+    "website": "https://www.nookbk.com/"
   },
   "12500642305": {
     "name": "Coffee tour goes to Somedays Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "somedaysbakery",
+    "website": "https://www.somedaysbakery.com/"
   },
   "12483613248": {
     "name": "Coffee tour goes to Fellini Coffee Soho",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "fellinicoffee",
+    "website": "https://www.fellinicoffee.com/"
   },
   "12441890310": {
     "name": "Coffee tour goes to Sweetleaf Coffee Roasters",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "sweetleafnyc",
+    "website": "https://www.sweetleafcoffee.com/"
   },
   "12423974394": {
     "name": "Coffee tour goes to Butler",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "butlerbakeshop",
+    "website": "https://www.butler-nyc.com/"
   },
   "12419749418": {
     "name": "Coffee tour goes to Lucille's Coffee and Cocktails + monthly perimeter run",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lucillesharlem",
+    "website": "https://www.lucillesharlem.com/"
   },
   "12383791048": {
     "name": "Coffee tour goes to MUD",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "mudcoffeenyc",
+    "website": "https://www.mudnyc.com/"
   },
   "12365898412": {
     "name": "Coffee tour goes to Kona Coffee Roasters",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "konacoffeeco",
+    "website": "https://konacoffee.nyc/"
   },
   "12361957410": {
     "name": "Coffee tour goes to Kobrick Coffee Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kobrickcoffee",
+    "website": "https://www.kobricks.com/"
   },
   "12324481377": {
     "name": "Coffee tour goes to Café Lyria",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "cafelyria",
+    "website": "https://cafe-lyria.com/"
   },
   "12305873132": {
     "name": "Coffee tour goes to Little Flower Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "littleflowercafe",
+    "website": "https://littleflower.nyc/"
   },
   "12299232375": {
     "name": "Coffee tour goes to La Cabra Roastery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "12264537136": {
     "name": "Coffee tour goes to Lion’s Milk",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lionsmilkbrooklyn",
+    "website": "https://www.lionsmilkbk.com/"
   },
   "12245974018": {
     "name": "Coffee tour goes to Rhythm Zero",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "rhythmzeronyc",
+    "website": "https://www.rhythmzeronyc.com/"
   },
   "12239680008": {
     "name": "Coffee tour goes to Abraco",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "abraco_espresso",
+    "website": "https://www.abraconyc.com/"
   },
   "12205314773": {
     "name": "Coffee tour goes to The Coppola Cafe",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "thecoppolacafe",
+    "website": "https://thecoppolacafe.com/"
   },
   "12186457076": {
     "name": "Coffee tour goes to Blue Bottle",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "bluebottle",
+    "website": "https://bluebottlecoffee.com"
   },
   "12145369676": {
     "name": "Coffee tour goes to Maman",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "_mamannyc_",
+    "website": "https://mamannyc.com/"
   },
   "12127616474": {
     "name": "Coffee tour goes to Devoción",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "devocionusa",
+    "website": "https://www.devocion.com/"
   },
   "12120133896": {
     "name": "Coffee tour goes to Black Fox Coffee",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "blackfoxcoffeeco",
+    "website": "https://blackfoxcoffee.com"
   },
   "12085505770": {
     "name": "Coffee tour goes to Dear Mama",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "dearmamanyc",
+    "website": "https://www.dearmamacoffee.com/"
   },
   "12067993484": {
     "name": "Coffee tour goes to Felix Roasting Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "felixroastingco",
+    "website": "https://felixroastingco.com"
   },
   "12036365184": {
     "name": "Post coffee run back home",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "12027223621": {
     "name": "Coffee tour goes to Conwell Coffee Hall #2",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "theconwellcocktailhall",
+    "website": "https://conwellhall.com/"
   },
   "12009844923": {
     "name": "Coffee tour goes to Kobrick Coffee Co.",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "kobrickcoffee",
+    "website": "https://www.kobricks.com/"
   },
   "12004389116": {
     "name": "Coffee tour to Ariston Flowers",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "aristonflowers",
+    "website": "https://aristonflowers.com/"
   },
   "11969145499": {
     "name": "Coffee tour goes to Remi43",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "remi43.nyc",
+    "website": "https://www.remi43.com/"
   },
   "11910695639": {
     "name": "Coffee tour goes to Conwell Coffee Hall",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "theconwellcocktailhall",
+    "website": "https://conwellhall.com/"
   },
   "11889885945": {
     "name": "Coffee tour goes to Sey + extra miles",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "seycoffee",
+    "website": "https://www.seycoffee.com/"
   },
   "11854219377": {
     "name": "Coffee tour goes to La Cabra Bakery",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "11837032947": {
     "name": "Coffee run to La Cabra",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "lacabracoffee",
+    "website": "https://us.lacabra.com/"
   },
   "11830582608": {
     "name": "Coffee tour goes to WatchHouse 5th Ave",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "watchhouse",
+    "website": "https://watchhouse.com"
   },
   "11776265941": {
     "name": "Coffee run to Nook",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "nook_bklyn",
+    "website": "https://www.nookbk.com/"
   },
   "11743458391": {
     "name": "Coffee run",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "11667946443": {
     "name": "Marathon Sunday - coffee shop run!",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   },
   "11503277838": {
     "name": "Run to fav coffeeshop, Nook and back",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "nook_bklyn",
+    "website": "https://www.nookbk.com/"
   },
   "11149399519": {
     "name": "Overslept dbrc, still made it to coffee to see friends",
     "hood": "",
     "stars": 0,
     "note": "",
-    "photos": 0
+    "photos": 0,
+    "ig": "",
+    "website": ""
   }
 }
