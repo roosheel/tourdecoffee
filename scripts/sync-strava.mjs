@@ -3,14 +3,19 @@
 /**
  * Strava → Tour de Coffee sync script
  *
- * Fetches your Strava run activities, decodes route polylines, and writes
- * them into src/data.js so the map stays up to date automatically.
+ * Fetches Strava run activities titled "Tour de Coffee …", decodes their route
+ * polylines, and rewrites src/data.js so the map stays up to date.
+ *
+ * src/data.js is regenerated from scratch on every run — Strava is the source
+ * of truth for the run list. Shop details you write by hand live in
+ * src/annotations.json (keyed by Strava activity id) and are merged back in.
  *
  * Usage:
  *   npm run sync              # uses summary polylines (fast, one API call)
  *   npm run sync -- --detailed # fetches full polylines per activity (slower, prettier routes)
  *
- * Credentials come from a .env file at the project root.
+ * Credentials come from a .env file at the project root. The refresh token must
+ * carry the `activity:read_all` scope — plain `read` cannot list activities.
  * Coffee-shop metadata (name, hood, stars, note) lives in src/annotations.json
  * and is merged in automatically — edit that file, not data.js.
  */
@@ -201,24 +206,47 @@ async function main() {
   let page = 1;
   while (true) {
     const batch = await fetchActivities(token, page, 100);
+    if (!Array.isArray(batch)) {
+      // Strava answers with an object, not a list, when the token lacks scope.
+      const missingScope = JSON.stringify(batch).includes("activity:read_permission");
+      throw new Error(
+        missingScope
+          ? "Strava rejected the activity list: the refresh token only has `read` scope.\n" +
+            "  Re-authorize with `activity:read_all` and swap the new refresh token into .env:\n" +
+            "  https://www.strava.com/oauth/authorize?client_id=" +
+            process.env.STRAVA_CLIENT_ID +
+            "&response_type=code&redirect_uri=http://localhost&approval_prompt=force&scope=activity:read_all"
+          : `Unexpected response from Strava: ${JSON.stringify(batch)}`
+      );
+    }
     if (batch.length === 0) break;
     allActivities = allActivities.concat(batch);
     if (batch.length < 100) break;
     page++;
   }
 
-  // Filter to runs that have a route polyline and matching keywords in the title
-  const tdcPattern = /tdc|tour de coffee|coffee|tour/i;
-  const runActivities = allActivities.filter(
-    (a) => a.type === "Run" && a.map?.summary_polyline && tdcPattern.test(a.name)
-  );
-  console.log(
-    `Found ${runActivities.length} runs with route data (out of ${allActivities.length} total activities)`
+  // Only runs explicitly titled "Tour de Coffee …" — a looser keyword match
+  // pulls in unrelated activities that merely mention coffee or a tour.
+  const TDC_TITLE = /tour de coffee/i;
+  const named = allActivities.filter((a) => TDC_TITLE.test(a.name));
+  const runActivities = named.filter(
+    (a) => a.type === "Run" && a.map?.summary_polyline
   );
 
+  console.log(
+    `Scanned ${allActivities.length} activities → ${named.length} titled "Tour de Coffee" → ` +
+      `${runActivities.length} runs with route data`
+  );
+  const skipped = named.length - runActivities.length;
+  if (skipped > 0) {
+    console.log(`  ↳ skipped ${skipped} (not a Run, or no GPS route recorded)`);
+  }
+
   if (runActivities.length === 0) {
-    console.log("No runs to sync. Exiting.");
-    return;
+    console.error(
+      "No matching runs found — refusing to overwrite src/data.js with an empty set."
+    );
+    process.exit(1);
   }
 
   // 3. Optionally fetch detailed polylines
