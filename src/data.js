@@ -1,4 +1,4 @@
-// Auto-synced from Strava — last updated 2026-07-13T00:36:25.291Z
+// Auto-synced from Strava — last updated 2026-07-13T00:59:33.021Z
 // Manual annotations: edit src/annotations.json and re-run `npm run sync`
 
 // Starting point: Apple Store, 5th Ave
@@ -7,7 +7,7 @@ export const START_COORDS = [40.7638, -73.9722];
 // Run data synced from Strava
 export const runs = [
   {
-    "id": 1,
+    "id": 156,
     "stravaId": 19283790966,
     "date": "Jul 12, 2026",
     "name": "Tour de Coffee: Harbour Kafe",
@@ -1362,7 +1362,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 2,
+    "id": 155,
     "stravaId": 19228206574,
     "date": "Jul 8, 2026",
     "name": "Tour de Coffee turns 2 —-> WatchHouse 5th Ave.",
@@ -2533,7 +2533,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 3,
+    "id": 154,
     "stravaId": 19200445277,
     "date": "Jul 6, 2026",
     "name": "Tour de Coffee: Lily's Roasters",
@@ -3448,7 +3448,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 4,
+    "id": 153,
     "stravaId": 19137203169,
     "date": "Jul 1, 2026",
     "name": "Tour de Coffee: Embriago Coffee",
@@ -5315,7 +5315,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 5,
+    "id": 152,
     "stravaId": 19109839399,
     "date": "Jun 29, 2026",
     "name": "Tour de Coffee: Malta Coffee",
@@ -6310,7 +6310,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 6,
+    "id": 151,
     "stravaId": 19049025664,
     "date": "Jun 24, 2026",
     "name": "Tour de Coffee: Monoblend Coffee",
@@ -7805,7 +7805,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 7,
+    "id": 150,
     "stravaId": 19021361723,
     "date": "Jun 22, 2026",
     "name": "Tour de Coffee: The Monkey Cup",
@@ -8772,7 +8772,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 8,
+    "id": 149,
     "stravaId": 18958484189,
     "date": "Jun 17, 2026",
     "name": "Tour de Coffee: ansā Micro Coffee Roastery",
@@ -10139,7 +10139,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 9,
+    "id": 148,
     "stravaId": 18928043317,
     "date": "Jun 15, 2026",
     "name": "Tour de Coffee: Merriweather Coffee + Kitchen",
@@ -11754,7 +11754,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 10,
+    "id": 147,
     "stravaId": 18918022777,
     "date": "Jun 14, 2026",
     "name": "Tour de Coffee: Sawada Coffee",
@@ -13185,7 +13185,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 11,
+    "id": 146,
     "stravaId": 18864618858,
     "date": "Jun 10, 2026",
     "name": "Tour de Coffee: Hani’s bakery + café",
@@ -14948,7 +14948,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 12,
+    "id": 145,
     "stravaId": 18836631284,
     "date": "Jun 8, 2026",
     "name": "Tour de Coffee: Myhouse Coffee",
@@ -16631,7 +16631,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 13,
+    "id": 144,
     "stravaId": 18825237366,
     "date": "Jun 7, 2026",
     "name": "Tour de Coffee: Saint Michel: Cafe and Art",
@@ -18106,7 +18106,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 14,
+    "id": 143,
     "stravaId": 18776664741,
     "date": "Jun 3, 2026",
     "name": "Tour de Coffee: WatchHouse (Global Running Day with Shokz 🎧)",
@@ -18901,7 +18901,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 15,
+    "id": 142,
     "stravaId": 18740733955,
     "date": "Jun 1, 2026",
     "name": "Tour de Coffee: Somedays Bakery - Flatiron",
@@ -20308,7 +20308,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 16,
+    "id": 141,
     "stravaId": 18731471553,
     "date": "May 31, 2026",
     "name": "Tour de Coffee: SEY Coffee",
@@ -21771,7 +21771,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 17,
+    "id": 140,
     "stravaId": 18674959354,
     "date": "May 27, 2026",
     "name": "Tour de Coffee: Gasoline Alley Coffee",
@@ -23270,7 +23270,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 18,
+    "id": 139,
     "stravaId": 18647511012,
     "date": "May 25, 2026",
     "name": "Tour de Coffee: Now or Never Coffee",
@@ -25057,7 +25057,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 19,
+    "id": 138,
     "stravaId": 18646338368,
     "date": "May 24, 2026",
     "name": "Tour de Coffee: Caffe Paradiso",
@@ -26864,7 +26864,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 20,
+    "id": 137,
     "stravaId": 18581239619,
     "date": "May 20, 2026",
     "name": "Tour de Coffee: Foreigner NYC",
@@ -28455,7 +28455,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 21,
+    "id": 136,
     "stravaId": 18553639225,
     "date": "May 18, 2026",
     "name": "Tour de Coffee: Bird & Branch Coffee Roasters",
@@ -29718,7 +29718,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 22,
+    "id": 135,
     "stravaId": 18489484592,
     "date": "May 13, 2026",
     "name": "Tour de Coffee: Toby’s Estate Coffee",
@@ -31401,7 +31401,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 23,
+    "id": 134,
     "stravaId": 18463524492,
     "date": "May 11, 2026",
     "name": "Tour de Coffee: Milkweed Studio",
@@ -32736,7 +32736,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 24,
+    "id": 133,
     "stravaId": 18398970184,
     "date": "May 6, 2026",
     "name": "Tour de Coffee: Radio Bakery",
@@ -34283,7 +34283,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 25,
+    "id": 132,
     "stravaId": 18371537740,
     "date": "May 4, 2026",
     "name": "Tour de Coffee: St Jardim",
@@ -35902,7 +35902,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 26,
+    "id": 131,
     "stravaId": 18306350069,
     "date": "Apr 29, 2026",
     "name": "Tour de Coffee: Black Fox Coffee",
@@ -37685,7 +37685,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 27,
+    "id": 130,
     "stravaId": 18278254228,
     "date": "Apr 27, 2026",
     "name": "Tour de Coffee: Say Coffee",
@@ -39088,7 +39088,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 28,
+    "id": 129,
     "stravaId": 18210981992,
     "date": "Apr 22, 2026",
     "name": "Tour de Coffee: Remi Flower & Coffee",
@@ -41019,7 +41019,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 29,
+    "id": 128,
     "stravaId": 18117922534,
     "date": "Apr 15, 2026",
     "name": "Tour de Coffee: St. George Boulangerie + MDS talk",
@@ -42634,7 +42634,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 30,
+    "id": 127,
     "stravaId": 18091022759,
     "date": "Apr 13, 2026",
     "name": "Tour de Coffee: Irving Farm Coffee",
@@ -44269,7 +44269,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 31,
+    "id": 126,
     "stravaId": 18081300328,
     "date": "Apr 12, 2026",
     "name": "Tour de Coffee: Abraço",
@@ -45728,7 +45728,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 32,
+    "id": 125,
     "stravaId": 18026852954,
     "date": "Apr 8, 2026",
     "name": "Tour de Coffee: Land To Sea",
@@ -47191,7 +47191,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 33,
+    "id": 124,
     "stravaId": 17998894152,
     "date": "Apr 6, 2026",
     "name": "Tour de Coffee: La Cabra",
@@ -48798,7 +48798,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 34,
+    "id": 123,
     "stravaId": 17988804061,
     "date": "Apr 5, 2026",
     "name": "Tour de Coffee: Manhattanville Coffee",
@@ -50265,7 +50265,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 35,
+    "id": 122,
     "stravaId": 17937961098,
     "date": "Apr 1, 2026",
     "name": "Tour de Coffee: Stumptown Coffee Roasters",
@@ -50760,7 +50760,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 36,
+    "id": 121,
     "stravaId": 17912933893,
     "date": "Mar 30, 2026",
     "name": "Tour de Coffee: WatchHouse 5th Ave.",
@@ -52311,7 +52311,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 37,
+    "id": 120,
     "stravaId": 17901035859,
     "date": "Mar 29, 2026",
     "name": "Tour de Coffee: SEY Coffee",
@@ -53890,7 +53890,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 38,
+    "id": 119,
     "stravaId": 17826383674,
     "date": "Mar 23, 2026",
     "name": "Tour de Coffee: Tuckshop NYC 🌧️",
@@ -55209,7 +55209,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 39,
+    "id": 118,
     "stravaId": 17818237024,
     "date": "Mar 22, 2026",
     "name": "Tour de Coffee: The Blue Light Speak Cheesy",
@@ -56560,7 +56560,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 40,
+    "id": 117,
     "stravaId": 17742508186,
     "date": "Mar 16, 2026",
     "name": "Tour de Coffee: RHYTHM ZERO | GREENPOINT",
@@ -57039,7 +57039,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 41,
+    "id": 116,
     "stravaId": 17684643815,
     "date": "Mar 11, 2026",
     "name": "Tour de Coffee: King's Street Coffee",
@@ -58962,7 +58962,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 42,
+    "id": 115,
     "stravaId": 17659507108,
     "date": "Mar 9, 2026",
     "name": "Tour de Coffee: L’Appartement 4F",
@@ -59881,7 +59881,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 43,
+    "id": 114,
     "stravaId": 17600548569,
     "date": "Mar 4, 2026",
     "name": "Tour de Coffee: The Mandarin",
@@ -61360,7 +61360,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 44,
+    "id": 113,
     "stravaId": 17570681884,
     "date": "Mar 1, 2026",
     "name": "Tour de Coffee: Supermoon Bakehouse",
@@ -62879,7 +62879,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 45,
+    "id": 112,
     "stravaId": 17518607631,
     "date": "Feb 25, 2026",
     "name": "Tour de Coffee: Ferrane Bakery",
@@ -64394,7 +64394,7 @@ export const runs = [
     "website": "https://ferranebakery.com/"
   },
   {
-    "id": 46,
+    "id": 111,
     "stravaId": 17486098661,
     "date": "Feb 22, 2026",
     "name": "Tour de Coffee x Bombas: Georgie’s Cafe & Bar",
@@ -66017,7 +66017,7 @@ export const runs = [
     "website": "https://www.georgies.cafe/"
   },
   {
-    "id": 47,
+    "id": 110,
     "stravaId": 17439575184,
     "date": "Feb 18, 2026",
     "name": "Tour de Coffee: Spongies Cafe",
@@ -67636,7 +67636,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 48,
+    "id": 109,
     "stravaId": 17416043050,
     "date": "Feb 16, 2026",
     "name": "Tour de Coffee: Stone Street Café",
@@ -69127,7 +69127,7 @@ export const runs = [
     "website": "https://stonestreetcoffee.com/"
   },
   {
-    "id": 49,
+    "id": 108,
     "stravaId": 17341697395,
     "date": "Feb 9, 2026",
     "name": "Tour de Coffee: Artara Coffee (Cambodian)",
@@ -70562,7 +70562,7 @@ export const runs = [
     "website": "https://artaracoffee.com/"
   },
   {
-    "id": 50,
+    "id": 107,
     "stravaId": 17260124094,
     "date": "Feb 2, 2026",
     "name": "Tour de Coffee: Cositas Café",
@@ -71901,7 +71901,7 @@ export const runs = [
     "website": "https://www.cositascafenyc.com/"
   },
   {
-    "id": 51,
+    "id": 106,
     "stravaId": 17127763815,
     "date": "Jan 21, 2026",
     "name": "Tour de Coffee: Zeppola Bakery",
@@ -73272,7 +73272,7 @@ export const runs = [
     "website": "https://zeppolabakery.com/"
   },
   {
-    "id": 52,
+    "id": 105,
     "stravaId": 17104047666,
     "date": "Jan 19, 2026",
     "name": "Tour de Coffee: Not As Bitter",
@@ -74811,7 +74811,7 @@ export const runs = [
     "website": "https://www.notasbitter.com/"
   },
   {
-    "id": 53,
+    "id": 104,
     "stravaId": 17096704058,
     "date": "Jan 18, 2026",
     "name": "Tour de Coffee: Café Habibti",
@@ -76410,7 +76410,7 @@ export const runs = [
     "website": "https://www.cafehabibti.com/"
   },
   {
-    "id": 54,
+    "id": 103,
     "stravaId": 17052588951,
     "date": "Jan 14, 2026",
     "name": "Tour de Coffee: Château le Woof",
@@ -77981,7 +77981,7 @@ export const runs = [
     "website": "https://www.chateaulewoof.com/"
   },
   {
-    "id": 55,
+    "id": 102,
     "stravaId": 16969172517,
     "date": "Jan 7, 2026",
     "name": "Tour de Coffee: SALSWEE",
@@ -79880,7 +79880,7 @@ export const runs = [
     "website": "https://salswee.com/"
   },
   {
-    "id": 56,
+    "id": 101,
     "stravaId": 16945399545,
     "date": "Jan 5, 2026",
     "name": "Tour de Coffee: Thea",
@@ -81355,7 +81355,7 @@ export const runs = [
     "website": "https://www.theabakerynyc.com/"
   },
   {
-    "id": 57,
+    "id": 100,
     "stravaId": 16749296452,
     "date": "Dec 15, 2025",
     "name": "Tour de Coffee: Dark Matter Coffee - Adios Amigos",
@@ -82942,7 +82942,7 @@ export const runs = [
     "website": "https://www.darkmattercoffee.com/"
   },
   {
-    "id": 58,
+    "id": 99,
     "stravaId": 16703575682,
     "date": "Dec 10, 2025",
     "name": "Tour de Coffee: St Kilda Coffee",
@@ -84257,7 +84257,7 @@ export const runs = [
     "website": "https://www.stkildacoffee.com/"
   },
   {
-    "id": 59,
+    "id": 98,
     "stravaId": 16685129097,
     "date": "Dec 8, 2025",
     "name": "Tour de Coffee: La Cabra 🐐",
@@ -85980,7 +85980,7 @@ export const runs = [
     "website": "https://us.lacabra.com/"
   },
   {
-    "id": 60,
+    "id": 97,
     "stravaId": 16678957103,
     "date": "Dec 7, 2025",
     "name": "Tour de Coffee: Kora",
@@ -87355,7 +87355,7 @@ export const runs = [
     "website": "https://fromkora.com/"
   },
   {
-    "id": 61,
+    "id": 96,
     "stravaId": 16639576119,
     "date": "Dec 3, 2025",
     "name": "Tour de Coffee: Do Not Feed Alligators 🐊",
@@ -88818,7 +88818,7 @@ export const runs = [
     "website": "https://donotfeedalligators.com/"
   },
   {
-    "id": 62,
+    "id": 95,
     "stravaId": 16618688223,
     "date": "Dec 1, 2025",
     "name": "Tour de Coffee: La Tazza D'Oro NYC",
@@ -90485,7 +90485,7 @@ export const runs = [
     "website": "https://www.latazzadoro.us/"
   },
   {
-    "id": 63,
+    "id": 94,
     "stravaId": 16572025274,
     "date": "Nov 26, 2025",
     "name": "Tour de Coffee: Manjul Coffee & Clothing",
@@ -92104,7 +92104,7 @@ export const runs = [
     "website": "https://manjul.co/"
   },
   {
-    "id": 64,
+    "id": 93,
     "stravaId": 16553030618,
     "date": "Nov 24, 2025",
     "name": "Tour de Coffee: Rosetta Bakery",
@@ -93715,7 +93715,7 @@ export const runs = [
     "website": "https://www.rosettabakery.com/"
   },
   {
-    "id": 65,
+    "id": 92,
     "stravaId": 16504886920,
     "date": "Nov 19, 2025",
     "name": "Tour de Coffee: Little Flower Cafe 🌧️",
@@ -94926,7 +94926,7 @@ export const runs = [
     "website": "https://littleflower.nyc/"
   },
   {
-    "id": 66,
+    "id": 91,
     "stravaId": 16484806686,
     "date": "Nov 17, 2025",
     "name": "Tour de Coffee: Verse",
@@ -96369,7 +96369,7 @@ export const runs = [
     "website": "https://www.versenyc.co/"
   },
   {
-    "id": 67,
+    "id": 90,
     "stravaId": 16477086420,
     "date": "Nov 16, 2025",
     "name": "Tour de Coffee: KIJITORA",
@@ -98008,7 +98008,7 @@ export const runs = [
     "website": "https://www.kijitorabrooklyn.com/"
   },
   {
-    "id": 68,
+    "id": 89,
     "stravaId": 16436288111,
     "date": "Nov 12, 2025",
     "name": "Tour de Coffee: Librae Bakery",
@@ -99607,7 +99607,7 @@ export const runs = [
     "website": "https://www.libraebakery.com/"
   },
   {
-    "id": 69,
+    "id": 88,
     "stravaId": 16414267773,
     "date": "Nov 10, 2025",
     "name": "Tour de Coffee: Slate Cafe Upper West Side",
@@ -100946,7 +100946,7 @@ export const runs = [
     "website": "https://www.slatecafe.com/"
   },
   {
-    "id": 70,
+    "id": 87,
     "stravaId": 16407333817,
     "date": "Nov 9, 2025",
     "name": "Tour de Coffee: SEY Coffee",
@@ -102497,7 +102497,7 @@ export const runs = [
     "website": "https://www.seycoffee.com/"
   },
   {
-    "id": 71,
+    "id": 86,
     "stravaId": 16364202598,
     "date": "Nov 5, 2025",
     "name": "Tour de Coffee: LPQ",
@@ -103352,7 +103352,7 @@ export const runs = [
     "website": "https://www.lepainquotidien.com/us/en"
   },
   {
-    "id": 72,
+    "id": 85,
     "stravaId": 16291539678,
     "date": "Oct 29, 2025",
     "name": "Tour de Coffee: Julien Boulangerie",
@@ -104667,7 +104667,7 @@ export const runs = [
     "website": "https://www.julienboulangerie.com/"
   },
   {
-    "id": 73,
+    "id": 84,
     "stravaId": 16270274002,
     "date": "Oct 27, 2025",
     "name": "Tour de Coffee: Gold coffee",
@@ -106198,7 +106198,7 @@ export const runs = [
     "website": "https://goldcoffee.us/"
   },
   {
-    "id": 74,
+    "id": 83,
     "stravaId": 16262404205,
     "date": "Oct 26, 2025",
     "name": "Tour de Coffee: Gem Home",
@@ -107701,7 +107701,7 @@ export const runs = [
     "website": "https://www.gemhomenyc.com/"
   },
   {
-    "id": 75,
+    "id": 82,
     "stravaId": 16221568465,
     "date": "Oct 22, 2025",
     "name": "Tour de Coffee: Solid State Coffee",
@@ -109260,7 +109260,7 @@ export const runs = [
     "website": "https://solidstatecoffee.com/"
   },
   {
-    "id": 76,
+    "id": 81,
     "stravaId": 16200155085,
     "date": "Oct 20, 2025",
     "name": "Tour de Coffee: Le Cafe Coffee",
@@ -110591,7 +110591,7 @@ export const runs = [
     "website": "https://lecafecoffee.com/"
   },
   {
-    "id": 77,
+    "id": 80,
     "stravaId": 16193775862,
     "date": "Oct 19, 2025",
     "name": "Tour de Coffee: Elbow Bread",
@@ -112070,7 +112070,7 @@ export const runs = [
     "website": "https://www.elbowbread.shop/"
   },
   {
-    "id": 78,
+    "id": 79,
     "stravaId": 16149290338,
     "date": "Oct 15, 2025",
     "name": "Tour de Coffee: Cafe Ambrosia New York",
@@ -113437,7 +113437,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 79,
+    "id": 78,
     "stravaId": 16126534369,
     "date": "Oct 13, 2025",
     "name": "Tour de Coffee: dae day coffee 🌧️",
@@ -114744,7 +114744,7 @@ export const runs = [
     "website": "https://www.daeday.com/"
   },
   {
-    "id": 80,
+    "id": 77,
     "stravaId": 16073983833,
     "date": "Oct 8, 2025",
     "name": "Tour de Coffee: Remi Flower & Coffee",
@@ -116503,7 +116503,7 @@ export const runs = [
     "website": "https://www.reminyc.com/"
   },
   {
-    "id": 81,
+    "id": 76,
     "stravaId": 16051380000,
     "date": "Oct 6, 2025",
     "name": "Tour de Coffee: Inès",
@@ -117994,7 +117994,7 @@ export const runs = [
     "website": "https://www.inesnyc.com/"
   },
   {
-    "id": 82,
+    "id": 75,
     "stravaId": 15998786399,
     "date": "Oct 1, 2025",
     "name": "Tour de Coffee: SALSWEE",
@@ -119065,7 +119065,7 @@ export const runs = [
     "website": "https://salswee.com/"
   },
   {
-    "id": 83,
+    "id": 74,
     "stravaId": 15975041396,
     "date": "Sep 29, 2025",
     "name": "Tour de Coffee: Little Canal",
@@ -120648,7 +120648,7 @@ export const runs = [
     "website": "https://www.littlecanal.com/"
   },
   {
-    "id": 84,
+    "id": 73,
     "stravaId": 15966616484,
     "date": "Sep 28, 2025",
     "name": "Tour de Coffee: Maru Coffee",
@@ -122199,7 +122199,7 @@ export const runs = [
     "website": "https://www.marucoffee.com/"
   },
   {
-    "id": 85,
+    "id": 72,
     "stravaId": 15920727626,
     "date": "Sep 24, 2025",
     "name": "Tour de Coffee: L'Ami Pierre - French Bakery",
@@ -123534,7 +123534,7 @@ export const runs = [
     "website": "https://www.lamipierre.com/"
   },
   {
-    "id": 86,
+    "id": 71,
     "stravaId": 15898495547,
     "date": "Sep 22, 2025",
     "name": "Tour de Coffee: Capital One Café",
@@ -125253,7 +125253,7 @@ export const runs = [
     "website": "https://www.capitalone.com/local/"
   },
   {
-    "id": 87,
+    "id": 70,
     "stravaId": 15888872370,
     "date": "Sep 21, 2025",
     "name": "Tour de Coffee: Mary O's Irish Soda Bread Shop",
@@ -126952,7 +126952,7 @@ export const runs = [
     "website": "https://maryos.nyc/"
   },
   {
-    "id": 88,
+    "id": 69,
     "stravaId": 15842338555,
     "date": "Sep 17, 2025",
     "name": "Tour de Coffee: MAMALI NYC",
@@ -128575,7 +128575,7 @@ export const runs = [
     "website": "https://mamalinyc.com/"
   },
   {
-    "id": 89,
+    "id": 68,
     "stravaId": 15819210665,
     "date": "Sep 15, 2025",
     "name": "Tour de Coffee: CupSoul Cafe",
@@ -130178,7 +130178,7 @@ export const runs = [
     "website": "https://www.cupsoul.com/"
   },
   {
-    "id": 90,
+    "id": 67,
     "stravaId": 15811455791,
     "date": "Sep 14, 2025",
     "name": "Tour de Coffee: Mottley Kitchen (+ Bronx 10 miler cheering 📣)",
@@ -131513,7 +131513,7 @@ export const runs = [
     "website": "https://www.mottleykitchen.com/"
   },
   {
-    "id": 91,
+    "id": 66,
     "stravaId": 15763290762,
     "date": "Sep 10, 2025",
     "name": "Tour de Coffee: Radio Bakery",
@@ -133188,7 +133188,7 @@ export const runs = [
     "website": "https://www.radiobakery.nyc/"
   },
   {
-    "id": 92,
+    "id": 65,
     "stravaId": 15740586202,
     "date": "Sep 8, 2025",
     "name": "Tour de Coffee: Amano Cafe",
@@ -134811,7 +134811,7 @@ export const runs = [
     "website": "https://www.amano-cafe.com/"
   },
   {
-    "id": 93,
+    "id": 64,
     "stravaId": 15682588763,
     "date": "Sep 3, 2025",
     "name": "Tour de Coffee: Afficionado Coffee Roasters",
@@ -136250,7 +136250,7 @@ export const runs = [
     "website": "https://www.afficionadocoffee.com/"
   },
   {
-    "id": 94,
+    "id": 63,
     "stravaId": 15660193424,
     "date": "Sep 1, 2025",
     "name": "Tour de Coffee: PARK at KIMS",
@@ -137789,7 +137789,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 95,
+    "id": 62,
     "stravaId": 15649485338,
     "date": "Aug 31, 2025",
     "name": "Tour de Coffee: McDonald’s",
@@ -138664,7 +138664,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 96,
+    "id": 61,
     "stravaId": 15604262221,
     "date": "Aug 27, 2025",
     "name": "Tour de Coffee: Caffe Aronne",
@@ -140063,7 +140063,7 @@ export const runs = [
     "website": "https://www.caffearonne.com/"
   },
   {
-    "id": 97,
+    "id": 60,
     "stravaId": 15579627566,
     "date": "Aug 25, 2025",
     "name": "Tour de Coffee: Vineapple (running part)",
@@ -141426,7 +141426,7 @@ export const runs = [
     "website": "https://www.vineapple.cafe/"
   },
   {
-    "id": 98,
+    "id": 59,
     "stravaId": 15571438718,
     "date": "Aug 24, 2025",
     "name": "Tour de Coffee: Papa d’Amour",
@@ -142909,7 +142909,7 @@ export const runs = [
     "website": "https://www.papadamourny.com/"
   },
   {
-    "id": 99,
+    "id": 58,
     "stravaId": 15524228265,
     "date": "Aug 20, 2025",
     "name": "Tour de Coffee: Uptaco - Breakfast Tacos & More",
@@ -144496,7 +144496,7 @@ export const runs = [
     "website": "https://www.uptaco.nyc"
   },
   {
-    "id": 100,
+    "id": 57,
     "stravaId": 15500275273,
     "date": "Aug 18, 2025",
     "name": "Tour de Coffee: drip coffee makers",
@@ -145643,7 +145643,7 @@ export const runs = [
     "website": "https://www.dripcoffeenyc.com/"
   },
   {
-    "id": 101,
+    "id": 56,
     "stravaId": 15339469978,
     "date": "Aug 4, 2025",
     "name": "Tour de Coffee: Smør Bakery",
@@ -146610,7 +146610,7 @@ export const runs = [
     "website": "https://www.smorbakerynyc.com/"
   },
   {
-    "id": 102,
+    "id": 55,
     "stravaId": 15286009259,
     "date": "Jul 30, 2025",
     "name": "Tour de Coffee: Saltwater Coffee",
@@ -148485,7 +148485,7 @@ export const runs = [
     "website": "https://www.saltwaternyc.com/"
   },
   {
-    "id": 103,
+    "id": 54,
     "stravaId": 15263090250,
     "date": "Jul 28, 2025",
     "name": "Tour de Coffee: fontainhas",
@@ -150084,7 +150084,7 @@ export const runs = [
     "website": "https://www.fontainhasnyc.com/"
   },
   {
-    "id": 104,
+    "id": 53,
     "stravaId": 15254229002,
     "date": "Jul 27, 2025",
     "name": "Tour de Coffee: Dominique Ansel Bakery",
@@ -151671,7 +151671,7 @@ export const runs = [
     "website": "https://www.dominiqueansel.com/"
   },
   {
-    "id": 105,
+    "id": 52,
     "stravaId": 15186311255,
     "date": "Jul 21, 2025",
     "name": "Tour de Coffee: Picky Barista",
@@ -152994,7 +152994,7 @@ export const runs = [
     "website": "https://pickybarista.com/"
   },
   {
-    "id": 106,
+    "id": 51,
     "stravaId": 15177489224,
     "date": "Jul 20, 2025",
     "name": "Tour de Coffee: Bench Flour Bakers",
@@ -153745,7 +153745,7 @@ export const runs = [
     "website": "https://benchflournyc.com/"
   },
   {
-    "id": 107,
+    "id": 50,
     "stravaId": 15132672709,
     "date": "Jul 16, 2025",
     "name": "Tour de Coffee: Luckin Coffee",
@@ -155028,7 +155028,7 @@ export const runs = [
     "website": "https://www.luckincoffee.us"
   },
   {
-    "id": 108,
+    "id": 49,
     "stravaId": 15110465963,
     "date": "Jul 14, 2025",
     "name": "Tour de Coffee: WatchHouse Chrysler Building",
@@ -156707,7 +156707,7 @@ export const runs = [
     "website": "https://watchhouse.com"
   },
   {
-    "id": 109,
+    "id": 48,
     "stravaId": 15101318751,
     "date": "Jul 13, 2025",
     "name": "Tour de Coffee: La Cabra Roastery",
@@ -158270,7 +158270,7 @@ export const runs = [
     "website": "https://us.lacabra.com/"
   },
   {
-    "id": 110,
+    "id": 47,
     "stravaId": 15056692239,
     "date": "Jul 9, 2025",
     "name": "Tour de Coffee: PlantShed Cafe",
@@ -159761,7 +159761,7 @@ export const runs = [
     "website": "https://www.plantshed.com"
   },
   {
-    "id": 111,
+    "id": 46,
     "stravaId": 15034570804,
     "date": "Jul 7, 2025",
     "name": "Tour de Coffee: WatchHouse (1st Birthday of the club)",
@@ -161104,7 +161104,7 @@ export const runs = [
     "website": "https://watchhouse.com"
   },
   {
-    "id": 112,
+    "id": 45,
     "stravaId": 14983067192,
     "date": "Jul 2, 2025",
     "name": "Tour de Coffee: Felix Roasting Co.",
@@ -161779,7 +161779,7 @@ export const runs = [
     "website": "https://felixroastingco.com"
   },
   {
-    "id": 113,
+    "id": 44,
     "stravaId": 14962335684,
     "date": "Jun 30, 2025",
     "name": "Tour de Coffee: Manhattanville Coffee",
@@ -162274,7 +162274,7 @@ export const runs = [
     "website": "https://www.manhattanvillecoffee.com"
   },
   {
-    "id": 114,
+    "id": 43,
     "stravaId": 14447178067,
     "date": "May 11, 2025",
     "name": "Tour de Coffee: Nick + Sons Bakery",
@@ -163633,7 +163633,7 @@ export const runs = [
     "website": "https://www.nickandsonsbakery.com"
   },
   {
-    "id": 115,
+    "id": 42,
     "stravaId": 14407433014,
     "date": "May 7, 2025",
     "name": "Tour de Coffee: Gemina Coffee Shop",
@@ -165280,7 +165280,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 116,
+    "id": 41,
     "stravaId": 14386902497,
     "date": "May 5, 2025",
     "name": "Tour de Coffee: Blue Bottle x Marimekko",
@@ -167043,7 +167043,7 @@ export const runs = [
     "website": "https://bluebottlecoffee.com"
   },
   {
-    "id": 117,
+    "id": 40,
     "stravaId": 14375898374,
     "date": "May 4, 2025",
     "name": "Tour de Coffee: Bánh by Lauren",
@@ -168610,7 +168610,7 @@ export const runs = [
     "website": "https://banhbylauren.com"
   },
   {
-    "id": 118,
+    "id": 39,
     "stravaId": 14333512762,
     "date": "Apr 30, 2025",
     "name": "Tour de Coffee: Black Fox Coffee",
@@ -170057,7 +170057,7 @@ export const runs = [
     "website": "https://blackfoxcoffee.com"
   },
   {
-    "id": 119,
+    "id": 38,
     "stravaId": 14311316246,
     "date": "Apr 28, 2025",
     "name": "Tour de Coffee: Koré Coffee",
@@ -171460,7 +171460,7 @@ export const runs = [
     "website": "http://korecoffee.nyc"
   },
   {
-    "id": 120,
+    "id": 37,
     "stravaId": 14243845910,
     "date": "Apr 21, 2025",
     "name": "Tour de Coffee: Cinico Coffee Company",
@@ -172951,7 +172951,7 @@ export const runs = [
     "website": "https://cinicocoffee.com"
   },
   {
-    "id": 121,
+    "id": 36,
     "stravaId": 14234791219,
     "date": "Apr 20, 2025",
     "name": "Tour de Coffee: Laurel Bakery",
@@ -174378,7 +174378,7 @@ export const runs = [
     "website": "https://www.laurelbakery.com"
   },
   {
-    "id": 122,
+    "id": 35,
     "stravaId": 14195647661,
     "date": "Apr 16, 2025",
     "name": "Tour de Coffee: Ground Support Cafe",
@@ -175817,7 +175817,7 @@ export const runs = [
     "website": "https://www.groundsupportnyc.com"
   },
   {
-    "id": 123,
+    "id": 34,
     "stravaId": 14174369299,
     "date": "Apr 14, 2025",
     "name": "Tour de Coffee: The Cafe at Cornell Tech",
@@ -177220,7 +177220,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 124,
+    "id": 33,
     "stravaId": 14126840110,
     "date": "Apr 9, 2025",
     "name": "Tour de Coffee: Somedays Bakery LIC",
@@ -178935,7 +178935,7 @@ export const runs = [
     "website": "https://www.somedaysbakery.com/"
   },
   {
-    "id": 125,
+    "id": 32,
     "stravaId": 14106560158,
     "date": "Apr 7, 2025",
     "name": "Tour de Coffee: Larry's Ca Phe",
@@ -180362,7 +180362,7 @@ export const runs = [
     "website": "https://www.larryscaphe.com/"
   },
   {
-    "id": 126,
+    "id": 31,
     "stravaId": 14058358166,
     "date": "Apr 2, 2025",
     "name": "Tour de Coffee: White Noise Coffee",
@@ -181773,7 +181773,7 @@ export const runs = [
     "website": "https://whitenoisecoffee.com/"
   },
   {
-    "id": 127,
+    "id": 30,
     "stravaId": 14038635651,
     "date": "Mar 31, 2025",
     "name": "Tour de Coffee: Aux Merveilleux de Fred",
@@ -183152,7 +183152,7 @@ export const runs = [
     "website": "https://www.marvelousbyfred.com/"
   },
   {
-    "id": 128,
+    "id": 29,
     "stravaId": 13992686893,
     "date": "Mar 26, 2025",
     "name": "Tour de Coffee: Kaafi by Chaiguy",
@@ -184447,7 +184447,7 @@ export const runs = [
     "website": "https://www.kaafiny.com/"
   },
   {
-    "id": 129,
+    "id": 28,
     "stravaId": 13972252617,
     "date": "Mar 24, 2025",
     "name": "Tour de Coffee: Vibrant Coffee",
@@ -186446,7 +186446,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 130,
+    "id": 27,
     "stravaId": 13965951626,
     "date": "Mar 23, 2025",
     "name": "Tour de Coffee: Georgie’s Cafe & Bar",
@@ -187777,7 +187777,7 @@ export const runs = [
     "website": "https://www.georgies.cafe/"
   },
   {
-    "id": 131,
+    "id": 26,
     "stravaId": 13927176316,
     "date": "Mar 19, 2025",
     "name": "Tour de Coffee: % Arabica",
@@ -189160,7 +189160,7 @@ export const runs = [
     "website": "https://arabicacoffeeus.com/"
   },
   {
-    "id": 132,
+    "id": 25,
     "stravaId": 13907665626,
     "date": "Mar 17, 2025",
     "name": "Tour de Coffee: Qamaria Yemeni Coffee Co.",
@@ -190819,7 +190819,7 @@ export const runs = [
     "website": "https://www.qamariacoffee.com/"
   },
   {
-    "id": 133,
+    "id": 24,
     "stravaId": 13861608096,
     "date": "Mar 12, 2025",
     "name": "Tour de Coffee: Café Joyeux",
@@ -192510,7 +192510,7 @@ export const runs = [
     "website": "https://us.cafejoyeux.com/"
   },
   {
-    "id": 134,
+    "id": 23,
     "stravaId": 13841955909,
     "date": "Mar 10, 2025",
     "name": "Tour de Coffee: Manjul Coffee & Clothing",
@@ -194353,7 +194353,7 @@ export const runs = [
     "website": "https://manjul.co/"
   },
   {
-    "id": 135,
+    "id": 22,
     "stravaId": 13796249767,
     "date": "Mar 5, 2025",
     "name": "Tour de Coffee: Under Pressure Coffee",
@@ -195652,7 +195652,7 @@ export const runs = [
     "website": "https://www.underpressurecoffee.com/"
   },
   {
-    "id": 136,
+    "id": 21,
     "stravaId": 13778594836,
     "date": "Mar 3, 2025",
     "name": "Tour de Coffee: Birch Coffee",
@@ -197159,7 +197159,7 @@ export const runs = [
     "website": "https://www.birchcoffee.com/"
   },
   {
-    "id": 137,
+    "id": 20,
     "stravaId": 13770292253,
     "date": "Mar 2, 2025",
     "name": "Tour de Coffee: Red Rover",
@@ -198194,7 +198194,7 @@ export const runs = [
     "website": "https://www.redrover.nyc"
   },
   {
-    "id": 138,
+    "id": 19,
     "stravaId": 13733133301,
     "date": "Feb 26, 2025",
     "name": "Tour de Coffee: Hani’s bakery + café",
@@ -199485,7 +199485,7 @@ export const runs = [
     "website": "https://www.hanisnyc.com/"
   },
   {
-    "id": 139,
+    "id": 18,
     "stravaId": 13714043417,
     "date": "Feb 24, 2025",
     "name": "Tour de Coffee: La Cabra",
@@ -201144,7 +201144,7 @@ export const runs = [
     "website": "https://us.lacabra.com/"
   },
   {
-    "id": 140,
+    "id": 17,
     "stravaId": 13670176442,
     "date": "Feb 19, 2025",
     "name": "Tour de Coffee: Bird & Branch Coffee Roasters",
@@ -202851,7 +202851,7 @@ export const runs = [
     "website": "https://birdandbranch.com/"
   },
   {
-    "id": 141,
+    "id": 16,
     "stravaId": 13651426051,
     "date": "Feb 17, 2025",
     "name": "Tour de Coffee: Felix Roasting Co.",
@@ -204190,7 +204190,7 @@ export const runs = [
     "website": "https://felixroastingco.com"
   },
   {
-    "id": 142,
+    "id": 15,
     "stravaId": 13645248493,
     "date": "Feb 16, 2025",
     "name": "Tour de Coffee: “Sunday Morning” 🌧️",
@@ -205689,7 +205689,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 143,
+    "id": 14,
     "stravaId": 13609059342,
     "date": "Feb 12, 2025",
     "name": "Tour de Coffee: The Monkey Cup",
@@ -207076,7 +207076,7 @@ export const runs = [
     "website": "https://www.themonkeycup.com/"
   },
   {
-    "id": 144,
+    "id": 13,
     "stravaId": 13591130861,
     "date": "Feb 10, 2025",
     "name": "Tour de Coffee: Daily Provisions – Rockefeller Center",
@@ -208815,7 +208815,7 @@ export const runs = [
     "website": "https://www.dailyprovisions.co/"
   },
   {
-    "id": 145,
+    "id": 12,
     "stravaId": 13585609019,
     "date": "Feb 9, 2025",
     "name": "Tour de Coffee: Supermoon Bakehouse",
@@ -210706,7 +210706,7 @@ export const runs = [
     "website": "https://www.supermoonbakehouse.com/"
   },
   {
-    "id": 146,
+    "id": 11,
     "stravaId": 13546801954,
     "date": "Feb 5, 2025",
     "name": "Tour de Coffee: Cafe MSMN",
@@ -212133,7 +212133,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 147,
+    "id": 10,
     "stravaId": 13528753333,
     "date": "Feb 3, 2025",
     "name": "Tour de Coffee: Qahwah House - Broadway",
@@ -213544,7 +213544,7 @@ export const runs = [
     "website": "https://qahwahhouse.com/"
   },
   {
-    "id": 148,
+    "id": 9,
     "stravaId": 13484009101,
     "date": "Jan 29, 2025",
     "name": "Tour de Coffee: Spongies Cafe",
@@ -215191,7 +215191,7 @@ export const runs = [
     "website": ""
   },
   {
-    "id": 149,
+    "id": 8,
     "stravaId": 13465968727,
     "date": "Jan 27, 2025",
     "name": "Tour de Coffee: The Hungarian Pastry Shop",
@@ -216702,7 +216702,7 @@ export const runs = [
     "website": "https://www.hungarianpastryshop.com/"
   },
   {
-    "id": 150,
+    "id": 7,
     "stravaId": 13424590115,
     "date": "Jan 22, 2025",
     "name": "Tour de Coffee: Ground Central Coffee Company",
@@ -218581,7 +218581,7 @@ export const runs = [
     "website": "https://www.groundcentral.com/"
   },
   {
-    "id": 151,
+    "id": 6,
     "stravaId": 13405177633,
     "date": "Jan 20, 2025",
     "name": "Tour de Coffee: Gregorys Coffee",
@@ -220232,7 +220232,7 @@ export const runs = [
     "website": "https://gregoryscoffee.com/"
   },
   {
-    "id": 152,
+    "id": 5,
     "stravaId": 13400939585,
     "date": "Jan 19, 2025",
     "name": "Tour de Coffee: Sip & Play",
@@ -221491,7 +221491,7 @@ export const runs = [
     "website": "https://www.sipnplaynyc.com/"
   },
   {
-    "id": 153,
+    "id": 4,
     "stravaId": 13362319184,
     "date": "Jan 15, 2025",
     "name": "Tour de Coffee: Charlotte Cafe",
@@ -222906,7 +222906,7 @@ export const runs = [
     "website": "https://www.charlottecafe.com/"
   },
   {
-    "id": 154,
+    "id": 3,
     "stravaId": 13343019614,
     "date": "Jan 13, 2025",
     "name": "Tour de Coffee: Madame Bonté Café",
@@ -224157,7 +224157,7 @@ export const runs = [
     "website": "https://www.madamebonte.com/"
   },
   {
-    "id": 155,
+    "id": 2,
     "stravaId": 13335268121,
     "date": "Jan 12, 2025",
     "name": "Tour de Coffee: Bubby’s",
@@ -225564,7 +225564,7 @@ export const runs = [
     "website": "https://www.bubbys.com/"
   },
   {
-    "id": 156,
+    "id": 1,
     "stravaId": 13299121595,
     "date": "Jan 8, 2025",
     "name": "Tour de Coffee: Sote Coffee Roasters",

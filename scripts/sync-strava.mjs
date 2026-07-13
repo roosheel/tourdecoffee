@@ -266,7 +266,9 @@ async function main() {
     annotations = JSON.parse(readFileSync(ANNOTATIONS_PATH, "utf-8"));
   }
 
-  // 5. Build run objects (newest first)
+  // 5. Build run objects. The array stays newest-first (that's the order the
+  // journal lists them in), but run numbers count up chronologically, so the
+  // very first Tour de Coffee is #1 and the latest is #N.
   runActivities.sort(
     (a, b) => new Date(b.start_date_local) - new Date(a.start_date_local)
   );
@@ -279,7 +281,7 @@ async function main() {
     const ann = annotations[String(activity.id)] || {};
 
     return {
-      id: idx + 1,
+      id: runActivities.length - idx,
       stravaId: activity.id,
       date: formatDate(activity.start_date_local),
       name: ann.name || activity.name,
