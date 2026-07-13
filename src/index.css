@@ -379,6 +379,63 @@ button, input, select, textarea {
   z-index: 1;
 }
 
+/* Copy on the left, crew photo on the right */
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-photo {
+  margin: 0;
+  position: relative;
+}
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1000 / 903;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 8px solid #fff;
+  box-shadow: 0 18px 40px rgba(26, 26, 26, 0.16);
+}
+.hero-photo figcaption {
+  position: absolute;
+  right: 14px;
+  bottom: -14px;
+  transform: rotate(-3deg);
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: #E8913A;
+  color: #fff;
+  font-size: 20px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(232, 145, 58, 0.3);
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  /* Lead with the words, then the photo */
+  .hero-photo {
+    order: 2;
+    max-width: 460px;
+  }
+  .hero-photo img {
+    border-width: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo {
+    transform: none !important;
+  }
+}
+
 /* ========================================
    Badge
    ======================================== */

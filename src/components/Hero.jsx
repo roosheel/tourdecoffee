@@ -4,6 +4,7 @@ import Badge from './Badge';
 import Marquee from './Marquee';
 import tdcTitle from '../assets/tdc-title.png';
 import tdcDecoration from '../assets/tdc-decoration.png';
+import tdcCrew from '../assets/tdc-crew.jpg';
 import { MARQUEE_TOP } from '../data';
 
 export default function Hero({ onNav }) {
@@ -42,6 +43,8 @@ export default function Hero({ onNav }) {
         />
 
         <div className="hero-content">
+          <div className="hero-grid">
+          <div className="hero-copy">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -105,6 +108,24 @@ export default function Hero({ onNav }) {
               @tourdecoffee_runclub
             </a>
           </motion.div>
+          </div>
+
+          <motion.figure
+            className="hero-photo"
+            initial={{ opacity: 0, y: 24, rotate: 0 }}
+            animate={{ opacity: 1, y: 0, rotate: -1.5 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+          >
+            <img
+              src={tdcCrew}
+              alt="The Tour de Coffee crew gathered on the steps of the Apple Store cube on 5th Ave before a morning run"
+              width={1000}
+              height={903}
+              loading="eager"
+            />
+            <figcaption className="font-cursive">the 6:30am crew</figcaption>
+          </motion.figure>
+          </div>
 
           <motion.div
             onClick={() => onNav("about")}
