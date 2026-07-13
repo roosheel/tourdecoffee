@@ -16,7 +16,7 @@ export default function About() {
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="font-cursive" style={{ fontSize: 40, fontWeight: 700, margin: "0 0 6px" }}>
+            <h2 style={{ fontSize: 40, fontWeight: 700, margin: "0 0 6px" }}>
               What's the deal?
             </h2>
             <p style={{ color: "#ccc", fontSize: 13, margin: "0 0 20px", letterSpacing: 1 }}>/ about us</p>

@@ -242,7 +242,7 @@ export default function Journal() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4 }}
           >
-            <h2 className="font-cursive" style={{ fontSize: 40, fontWeight: 700, margin: "0 0 4px" }}>
+            <h2 style={{ fontSize: 40, fontWeight: 700, margin: "0 0 4px" }}>
               Run Journal
             </h2>
             <p className="font-hand" style={{ color: "#bbb", fontSize: 15, margin: 0 }}>

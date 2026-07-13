@@ -2,6 +2,25 @@
    Tour de Coffee — Global Styles
    ======================================== */
 
+/* Self-hosted display faces */
+@font-face {
+  font-family: "Greek Freak";
+  src: url("./assets/fonts/Greek-Freak.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Re-encoded from the original TTF, whose malformed glyf table
+   was rejected by Chrome's font sanitizer. */
+@font-face {
+  font-family: "Augustus";
+  src: url("./assets/fonts/Augustus.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Reset & Base */
 *, *::before, *::after {
   margin: 0;
@@ -16,11 +35,20 @@ html {
 }
 
 body {
-  font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+  font-family: "Augustus", "DM Sans", system-ui, -apple-system, sans-serif;
   background: #faf9f7;
   color: #1a1a1a;
   overflow-x: hidden;
   line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Greek Freak", "DM Sans", system-ui, sans-serif;
+}
+
+/* Form controls don't inherit the body face by default */
+button, input, select, textarea {
+  font-family: inherit;
 }
 
 ::selection {
@@ -32,7 +60,7 @@ body {
    Typography Helpers
    ======================================== */
 .font-cursive { font-family: "Caveat", cursive; }
-.font-hand { font-family: "Patrick Hand", cursive; }
+.font-hand { font-family: "Augustus", "DM Sans", system-ui, sans-serif; }
 
 /* ========================================
    Keyframe Animations
@@ -451,7 +479,7 @@ body {
   border: 1.5px solid #e8e4df;
   border-radius: 12px;
   font-size: 14px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Augustus", "DM Sans", sans-serif;
   background: #fff;
   color: #1a1a1a;
   outline: none;

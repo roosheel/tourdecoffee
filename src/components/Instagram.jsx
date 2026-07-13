@@ -39,7 +39,7 @@ export default function Instagram() {
             }}>
               <InstagramIcon size={20} color="#E8913A" />
             </div>
-            <h2 className="font-cursive" style={{ fontSize: 30, fontWeight: 700, margin: 0 }}>
+            <h2 style={{ fontSize: 30, fontWeight: 700, margin: 0 }}>
               @tourdecoffee_runclub
             </h2>
           </motion.div>

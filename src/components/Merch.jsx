@@ -25,7 +25,7 @@ export default function Merch() {
             transition={{ duration: 0.5 }}
           >
             <Badge color="#E8913A" bg="rgba(232,145,58,0.15)" rotate={-1}>coming soon</Badge>
-            <h2 className="font-cursive" style={{
+            <h2 style={{
               fontSize: 44,
               fontWeight: 700,
               margin: "20px 0 14px",

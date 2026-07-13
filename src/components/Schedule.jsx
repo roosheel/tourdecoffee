@@ -20,7 +20,6 @@ export default function Schedule() {
           gap: 12,
         }}>
           <motion.h2
-            className="font-cursive"
             style={{ fontSize: 40, fontWeight: 700, margin: 0 }}
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
