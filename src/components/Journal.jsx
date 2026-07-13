@@ -210,14 +210,21 @@ export default function Journal() {
     setIsAnimating(true);
   };
 
-  // Scroll active pill into view
+  // Centre the active pill in its own strip. Scrolling the container directly
+  // rather than calling activeBtn.scrollIntoView() — that also scrolls every
+  // scrollable ancestor, so on mount it dragged the whole page down to the
+  // journal instead of leaving the visitor at the top.
   useEffect(() => {
-    if (pillContainerRef.current) {
-      const activeBtn = pillContainerRef.current.querySelector('.run-pill.active');
-      if (activeBtn) {
-        activeBtn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-      }
-    }
+    const container = pillContainerRef.current;
+    const activeBtn = container?.querySelector('.run-pill.active');
+    if (!container || !activeBtn) return;
+
+    const target =
+      activeBtn.offsetLeft - (container.clientWidth - activeBtn.clientWidth) / 2;
+    container.scrollTo({
+      left: Math.max(0, target),
+      behavior: "smooth",
+    });
   }, [current]);
 
   // Reset current when filter changes
