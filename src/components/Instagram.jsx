@@ -82,15 +82,19 @@ export default function Instagram() {
             ))}
           </div>
         ) : (
-          <motion.div
+          <motion.a
+            href="https://www.instagram.com/tourdecoffee_runclub/"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 16 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.15 }}
             className="ig-empty"
           >
-            <InstagramIcon size={32} color="#d4cfc9" />
-            <p>Run <code>npm run sync:instagram</code> to pull in posts.</p>
-          </motion.div>
+            <InstagramIcon size={32} color="#E8913A" />
+            <p>See every run and coffee stop over on Instagram.</p>
+            <span className="ig-empty-cta">@tourdecoffee_runclub <ArrowUpRight size={14} /></span>
+          </motion.a>
         )}
       </div>
     </section>

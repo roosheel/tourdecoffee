@@ -705,19 +705,29 @@ button, input, select, textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 60px 20px;
-  border: 2px dashed #e0dcd7;
+  gap: 10px;
+  padding: 56px 20px;
+  border: 2px dashed #e6cfae;
   border-radius: 16px;
   text-align: center;
-  color: #aaa;
-  font-size: 14px;
+  color: #8a8378;
+  font-size: 15px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
 }
-.ig-empty code {
-  background: #f3f1ed;
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 13px;
+.ig-empty:hover {
+  border-color: #E8913A;
+  background: #fdf7f0;
+}
+.ig-empty p {
+  margin: 0;
+}
+.ig-empty-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #E8913A;
+  font-weight: 600;
 }
 
 /* ========================================
