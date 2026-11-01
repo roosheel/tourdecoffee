@@ -146,12 +146,13 @@ export default function Journal() {
   const [routes, setRoutes] = useState(null); // { [run.id]: [[lat, lng], …] }
   const ref = useRef(null);
 
-  // Lazy-load the heavy route geometry once, after the component mounts. Vite
-  // splits routes.json into its own async chunk, so it never blocks first paint.
+  // Fetch route geometry once after mount. routes.json lives in public/ so it
+  // is served as a plain static file and never bundled into the JS chunks.
   useEffect(() => {
     let alive = true;
-    import('../routes.json')
-      .then((mod) => { if (alive) setRoutes(mod.default); })
+    fetch(`${import.meta.env.BASE_URL}routes.json`)
+      .then((r) => r.json())
+      .then((data) => { if (alive) setRoutes(data); })
       .catch(() => { if (alive) setRoutes({}); });
     return () => { alive = false; };
   }, []);

@@ -28,7 +28,7 @@ import { execSync } from "child_process";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DATA_PATH = join(ROOT, "src", "data.js");
-const ROUTES_PATH = join(ROOT, "src", "routes.json");
+const ROUTES_PATH = join(ROOT, "public", "routes.json");
 const ANNOTATIONS_PATH = join(ROOT, "src", "annotations.json");
 const ENV_PATH = join(ROOT, ".env");
 
