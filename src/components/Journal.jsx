@@ -61,6 +61,10 @@ function groupRunsByShop(allRuns) {
 
 const shopGroups = groupRunsByShop(runs);
 
+// Route geometry is loaded lazily from routes.json (see the effect in Journal)
+// to keep it out of the initial JS bundle. Until it arrives, routes read empty.
+const EMPTY_ROUTE = [];
+
 const ROUTE_MODES = [
   { key: "heatmap", label: "All Routes", icon: Layers },
   { key: "active", label: "Active", icon: Eye },
@@ -139,7 +143,23 @@ export default function Journal() {
   const [isAnimating, setIsAnimating] = useState(false);
   const [sortBy, setSortBy] = useState("recent");
   const [filterSearch, setFilterSearch] = useState("");
+  const [routes, setRoutes] = useState(null); // { [run.id]: [[lat, lng], …] }
   const ref = useRef(null);
+
+  // Lazy-load the heavy route geometry once, after the component mounts. Vite
+  // splits routes.json into its own async chunk, so it never blocks first paint.
+  useEffect(() => {
+    let alive = true;
+    import('../routes.json')
+      .then((mod) => { if (alive) setRoutes(mod.default); })
+      .catch(() => { if (alive) setRoutes({}); });
+    return () => { alive = false; };
+  }, []);
+
+  const routeOf = useCallback(
+    (r) => (routes && routes[r.id]) || EMPTY_ROUTE,
+    [routes]
+  );
   const pillContainerRef = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
@@ -478,14 +498,14 @@ export default function Journal() {
                   url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>'
                 />
-                <MapFitter route={run.route} />
+                <MapFitter route={routeOf(run)} />
                 {/* Heatmap: show all routes faintly */}
                 {routeMode === "heatmap" && runs.map((r) => {
                   if (r === run) return null;
                   return (
                     <Polyline
                       key={`bg-${r.id}`}
-                      positions={r.route}
+                      positions={routeOf(r)}
                       pathOptions={{
                         color: "#E8913A",
                         weight: 2,
@@ -500,7 +520,7 @@ export default function Journal() {
                 {routeMode !== "hidden" && (
                   <AnimatedRoute
                     key={run.id}
-                    route={run.route}
+                    route={routeOf(run)}
                     isAnimating={isAnimating}
                     onComplete={() => setIsAnimating(false)}
                   />
@@ -719,7 +739,7 @@ export default function Journal() {
                 }}>
                   <Route size={16} color="#7BBAD4" style={{ marginBottom: 4 }} />
                   <div style={{ fontSize: 11, color: "#bbb" }}>route pts</div>
-                  <div style={{ fontSize: 16, fontWeight: 700 }}>{run.route.length}</div>
+                  <div style={{ fontSize: 16, fontWeight: 700 }}>{routeOf(run).length}</div>
                 </div>
                 <div style={{
                   flex: 1,

@@ -28,6 +28,7 @@ import { execSync } from "child_process";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, "..");
 const DATA_PATH = join(ROOT, "src", "data.js");
+const ROUTES_PATH = join(ROOT, "src", "routes.json");
 const ANNOTATIONS_PATH = join(ROOT, "src", "annotations.json");
 const ENV_PATH = join(ROOT, ".env");
 
@@ -309,15 +310,27 @@ async function main() {
     ),
   }));
 
-  // 7. Write src/data.js
+  // 7. Write src/data.js (metadata) + src/routes.json (heavy route geometry).
+  // Route polylines are hundreds of KB each; keeping them out of the JS module
+  // means data.js stays small and the map's geometry is fetched lazily by the
+  // Journal component instead of shipping in the initial bundle.
+  const routesMap = {};
+  const runsMeta = runs.map(({ route, ...meta }) => {
+    routesMap[meta.id] = route;
+    return meta;
+  });
+  writeFileSync(ROUTES_PATH, JSON.stringify(routesMap));
+  console.log(`Wrote ${Object.keys(routesMap).length} route geometries to src/routes.json`);
+
   const dataJs = `// Auto-synced from Strava — last updated ${new Date().toISOString()}
 // Manual annotations: edit src/annotations.json and re-run \`npm run sync\`
+// Route geometry lives in src/routes.json (loaded lazily by the map).
 
 // Starting point: Apple Store, 5th Ave
 export const START_COORDS = [40.7638, -73.9722];
 
-// Run data synced from Strava
-export const runs = ${JSON.stringify(runs, null, 2)};
+// Run data synced from Strava (route geometry is in routes.json, keyed by id)
+export const runs = ${JSON.stringify(runsMeta, null, 2)};
 
 // Coffee log (derived from runs)
 export const coffeeLog = ${JSON.stringify(coffeeLog, null, 2)};
